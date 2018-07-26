@@ -1,0 +1,1 @@
+vhdtdtfi -prj JK_with_gate -o Z:/Scrivania/PROGETTI_ISE/JK_with_gate/tb_ffRS.vhi -module tb_ffRS -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work myNOR2.vhd -lib work latch_RS.vhd -lib work latch_rs_cloked.vhd -lib work flip_flop_rs.vhd -lib work tb_ffRS.vhd 

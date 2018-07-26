@@ -1,0 +1,16 @@
+# Output products list for <vio_addend>
+vio_addend.asy
+vio_addend.cdc
+vio_addend.constraints/vio_addend.ucf
+vio_addend.constraints/vio_addend.xdc
+vio_addend.gise
+vio_addend.ngc
+vio_addend.sym
+vio_addend.ucf
+vio_addend.vhd
+vio_addend.vho
+vio_addend.xco
+vio_addend.xdc
+vio_addend.xise
+vio_addend_flist.txt
+vio_addend_xmdf.tcl

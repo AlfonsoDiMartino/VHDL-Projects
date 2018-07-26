@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="JK_with_gate" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/RS_Clocked_Preset - Behavioral Z:|Scrivania|PROGETTI_ISE|JK_with_gate|RS_Clocked_Preset.vhd</ClosedNode>
+         <ClosedNode>/ffJK - Behavioral Z:|Scrivania|PROGETTI_ISE|JK_with_gate|ffJK.vhd</ClosedNode>
+         <ClosedNode>/ffJK - Behavioral Z:|Scrivania|PROGETTI_ISE|JK_with_gate|ffJK.vhd/RS_CLK_PRESET - RS_Clocked_Preset - Behavioral</ClosedNode>
+         <ClosedNode>/ffJK_MS - Behavioral |home|pietro|Dropbox|ase|componenti vhdl|JK_with_gate|ffJK_MS.vhd/Master - ffJK - Structural</ClosedNode>
+         <ClosedNode>/ffJK_MS - Behavioral |home|pietro|Dropbox|ase|componenti vhdl|JK_with_gate|ffJK_MS.vhd/Slave - ffJK - Structural</ClosedNode>
+         <ClosedNode>/ffRS - structural Z:|Scrivania|PROGETTI_ISE|JK_with_gate|flip_flop_rs.vhd</ClosedNode>
+         <ClosedNode>/ffRS - structural Z:|Scrivania|PROGETTI_ISE|JK_with_gate|flip_flop_rs.vhd/Slave - latchRS_clk - structural/latch - latchRS - structural</ClosedNode>
+         <ClosedNode>/ffT - Structural Z:|Scrivania|PROGETTI_ISE|JK_with_gate|ffT.vhd/JK - ffJK - Structural</ClosedNode>
+         <ClosedNode>/ffT - Structural |home|pietro|Dropbox|ase|componenti vhdl|JK_with_gate|ffT.vhd</ClosedNode>
+         <ClosedNode>/latchRS_clk - structural Z:|Scrivania|PROGETTI_ISE|JK_with_gate|latch_rs_cloked.vhd/latch - latchRS - structural</ClosedNode>
+         <ClosedNode>/tb_ffRS - behavioral Z:|Scrivania|PROGETTI_ISE|JK_with_gate|tb_ffRS.vhd/UUT - ffRS - structural/Slave - latchRS_clk - structural</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ffJK_MS - Behavioral (/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffJK_MS.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000133000000020000000000000000000000000200000064ffffffff000000810000000300000002000001330000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>ffJK_MS - Behavioral (/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffJK_MS.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Back-annotate Pin Locations</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate Post-Place &amp; Route Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000021a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000021a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000028a000000040101000100000000000000000000000064ffffffff000000810000000000000004000000570000000100000000000000300000000100000000000000920000000100000000000001710000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ffJK.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000128000000010001000100000000000000000000000064ffffffff000000810000000000000001000001280000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Back-annotate Pin Locations</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate Post-Place &amp; Route Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000124000000010000000100000000000000000000000064ffffffff000000810000000000000001000001240000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ffRS - structural Z:|Scrivania|PROGETTI_ISE|JK_with_gate|flip_flop_rs.vhd</ClosedNode>
+         <ClosedNode>/ffRS - structural Z:|Scrivania|PROGETTI_ISE|JK_with_gate|flip_flop_rs.vhd/Master - latchRS_clk - structural/latch - latchRS - structural</ClosedNode>
+         <ClosedNode>/ffRS - structural Z:|Scrivania|PROGETTI_ISE|JK_with_gate|flip_flop_rs.vhd/Slave - latchRS_clk - structural</ClosedNode>
+         <ClosedNode>/ffT - Structural Z:|Scrivania|PROGETTI_ISE|JK_with_gate|ffT.vhd</ClosedNode>
+         <ClosedNode>/tb_RS_CLK_PRESET - behavior Z:|Scrivania|PROGETTI_ISE|JK_with_gate|tb_RS_CLK_PRESET.vhd</ClosedNode>
+         <ClosedNode>/tb_RS_CLK_PRESET - behavior Z:|Scrivania|PROGETTI_ISE|JK_with_gate|tb_RS_CLK_PRESET.vhd/uut - RS_Clocked_Preset - Behavioral</ClosedNode>
+         <ClosedNode>/tb_RS_CLK_PRESET - behavior |home|pietro|Dropbox|ase|componenti vhdl|JK_with_gate|tb_RS_CLK_PRESET.vhd</ClosedNode>
+         <ClosedNode>/tb_ffJK - behavior Z:|Scrivania|PROGETTI_ISE|JK_with_gate|tb_ffJK.vhd</ClosedNode>
+         <ClosedNode>/tb_ffJK - behavior Z:|Scrivania|PROGETTI_ISE|JK_with_gate|tb_ffJK.vhd/uut - ffJK - Behavioral</ClosedNode>
+         <ClosedNode>/tb_ffJK - behavior |home|pietro|Dropbox|ase|componenti vhdl|JK_with_gate|tb_ffJK.vhd</ClosedNode>
+         <ClosedNode>/tb_ffJK_MS - behavior Z:|Scrivania|PROGETTI_ISE|JK_with_gate|tb_ffJK_MS.vhd</ClosedNode>
+         <ClosedNode>/tb_ffJK_MS - behavior |home|pietro|Dropbox|ase|componenti vhdl|JK_with_gate|tb_ffJK_MS.vhd</ClosedNode>
+         <ClosedNode>/tb_ffT - behavior Z:|Scrivania|PROGETTI_ISE|JK_with_gate|tb_ffT.vhd</ClosedNode>
+         <ClosedNode>/tb_ffT - behavior |home|pietro|Dropbox|ase|componenti vhdl|JK_with_gate|tb_ffT.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>tb_ffJK_MS - behavior (/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/tb_ffJK_MS.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ac000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ac0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>tb_ffJK_MS - behavior (/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/tb_ffJK_MS.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c40000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000124000000010000000100000000000000000000000064ffffffff000000810000000000000001000001240000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/tb_RS_CLK_PRESET - behavior Z:|Scrivania|PROGETTI_ISE|JK_with_gate|tb_RS_CLK_PRESET.vhd</ClosedNode>
+         <ClosedNode>/tb_ffJK - behavior Z:|Scrivania|PROGETTI_ISE|JK_with_gate|tb_ffJK.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>tb_ffJK_MS - behavior (Z:/Scrivania/PROGETTI_ISE/JK_with_gate/tb_ffJK_MS.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ed000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ed0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>tb_ffJK_MS - behavior (Z:/Scrivania/PROGETTI_ISE/JK_with_gate/tb_ffJK_MS.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000021a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000021a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000021a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000021a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000016f0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Behavioral Simulation</CurrentView>
+</Project>

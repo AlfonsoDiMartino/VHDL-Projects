@@ -1,0 +1,6 @@
+vhdl isim_temp "DCM_4.vhd"
+vhdl isim_temp "DCM_3.vhd"
+vhdl isim_temp "DCM_2.vhd"
+vhdl isim_temp "DCM.vhd"
+vhdl isim_temp "top_module.vhd"
+vhdl isim_temp "tb_DCM.vhd"

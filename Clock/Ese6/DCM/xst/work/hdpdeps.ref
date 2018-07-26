@@ -1,0 +1,29 @@
+V3 19
+FL /home/pietro/Scrivania/ISE_PROJECT/DCM/DCM.vhd 2016/01/09.01:04:00 P.20131013
+EN work/DCM 1452339658 FL /home/pietro/Scrivania/ISE_PROJECT/DCM/DCM.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/DCM/BEHAVIORAL 1452339659 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/DCM/DCM.vhd EN work/DCM 1452339658 \
+      CP BUFG CP IBUFG CP DCM_SP
+FL /home/pietro/Scrivania/ISE_PROJECT/DCM/DCM_2.vhd 2016/01/09.12:30:22 P.20131013
+EN work/DCM_2 1452339660 FL /home/pietro/Scrivania/ISE_PROJECT/DCM/DCM_2.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/DCM_2/BEHAVIORAL 1452339661 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/DCM/DCM_2.vhd EN work/DCM_2 1452339660 \
+      CP BUFG CP IBUFG CP DCM_SP
+FL /home/pietro/Scrivania/ISE_PROJECT/DCM/DCM_4.vhd 2016/01/09.01:05:02 P.20131013
+EN work/DCM_4 1452339662 FL /home/pietro/Scrivania/ISE_PROJECT/DCM/DCM_4.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/DCM_4/BEHAVIORAL 1452339663 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/DCM/DCM_4.vhd EN work/DCM_4 1452339662 \
+      CP BUFG CP IBUFG CP DCM_SP
+FL /home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.vhd 2016/01/09.12:39:53 P.20131013
+EN work/top_module 1452339664 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/top_module/Behavioral 1452339665 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.vhd EN work/top_module 1452339664 \
+      CP DCM CP DCM_2 CP DCM_4

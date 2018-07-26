@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="DCM.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="DCM.vhd">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="DCM.vhi"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="DCM_2.vhd">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="DCM_2.vhi"/>
+    <file xil_pn:fileType="FILE_UCF" xil_pn:name="DCM_2_arwz.ucf" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VHDL" xil_pn:name="DCM_3.vhd"/>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="DCM_3.vhi"/>
+    <file xil_pn:fileType="FILE_UCF" xil_pn:name="DCM_3_arwz.ucf" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="DCM_4.vhd">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_VHDL_INSTTEMPLATE" xil_pn:name="DCM_4.vhi"/>
+    <file xil_pn:fileType="FILE_UCF" xil_pn:name="DCM_4_arwz.ucf" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_UCF" xil_pn:name="DCM_arwz.ucf" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="ipcore_dir/DCM.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="ipcore_dir/DCM_2.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="ipcore_dir/DCM_4.vhd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_DCM_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_DCM_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_DCM_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_DCM_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="top_module.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="top_module.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="top_module.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="top_module.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="top_module.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="top_module.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="top_module.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="top_module.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="top_module_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="top_module_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="xaw2vhdl.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1452298736" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1452298736">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1452339768" xil_pn:in_ck="-6157822975116545535" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1452339768">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="tb_DCM.vhd"/>
+      <outfile xil_pn:name="top_module.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1452339768" xil_pn:in_ck="-3581272908098278297" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-6329934907497569249" xil_pn:start_ts="1452339768">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="DCM.vhd"/>
+      <outfile xil_pn:name="DCM_2.vhd"/>
+      <outfile xil_pn:name="DCM_4.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1452298854" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5979628249827658783" xil_pn:start_ts="1452298854">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1452298736" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="855159215982639601" xil_pn:start_ts="1452298736">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1452339768" xil_pn:in_ck="9154662644526614119" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1452339768">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="DCM.vhd"/>
+      <outfile xil_pn:name="DCM_2.vhd"/>
+      <outfile xil_pn:name="DCM_3.vhd"/>
+      <outfile xil_pn:name="DCM_4.vhd"/>
+      <outfile xil_pn:name="tb_DCM.vhd"/>
+      <outfile xil_pn:name="top_module.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1452339770" xil_pn:in_ck="9154662644526614119" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-640240529719496128" xil_pn:start_ts="1452339768">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_DCM_beh.prj"/>
+      <outfile xil_pn:name="tb_DCM_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1452339771" xil_pn:in_ck="-8609630842328745160" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="4004345684838775217" xil_pn:start_ts="1452339770">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_DCM_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1452339654" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1452339654">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1452339654" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="9076533396636901149" xil_pn:start_ts="1452339654">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1452339654" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="855159215982639601" xil_pn:start_ts="1452339654">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1452339654" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1452339654">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1452339654" xil_pn:in_ck="-3581272908098278297" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3741722235924120539" xil_pn:start_ts="1452339654">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="DCM.vhd"/>
+      <outfile xil_pn:name="DCM_2.vhd"/>
+      <outfile xil_pn:name="DCM_4.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1452339654" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-5485052969259075108" xil_pn:start_ts="1452339654">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1452339654" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-4589111285781033925" xil_pn:start_ts="1452339654">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1452339661" xil_pn:in_ck="8963111899248187832" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="3841475747780799470" xil_pn:start_ts="1452339654">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="top_module.lso"/>
+      <outfile xil_pn:name="top_module.ngc"/>
+      <outfile xil_pn:name="top_module.ngr"/>
+      <outfile xil_pn:name="top_module.prj"/>
+      <outfile xil_pn:name="top_module.stx"/>
+      <outfile xil_pn:name="top_module.syr"/>
+      <outfile xil_pn:name="top_module.xst"/>
+      <outfile xil_pn:name="top_module_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>

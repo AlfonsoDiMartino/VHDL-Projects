@@ -1,0 +1,825 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: multiplier_chipscope.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "multiplier_chipscope.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "multiplier_chipscope"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4-fg320
+
+---- Source Options
+Top Module Name                    : multiplier_chipscope
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/full_adder.vhd" in Library work.
+Architecture behavioral of Entity full_adder is up to date.
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/ripple_carry_adder.vhd" in Library work.
+Architecture structural of Entity ripple_carry_adder is up to date.
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/partial_product_row.vhd" in Library work.
+Architecture behavioral of Entity partial_product_row is up to date.
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/partial_prod_matrix.vhd" in Library work.
+Architecture behavioral of Entity partial_prod_matrix is up to date.
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/partial_sum_row.vhd" in Library work.
+Architecture behavioral of Entity partial_sum_row is up to date.
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/parallel_multiplier_righe.vhd" in Library work.
+Architecture behavioral of Entity parallel_multiplier_righe is up to date.
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/ipcore_dir/vio_fattore.vhd" in Library work.
+Architecture vio_fattore_a of Entity vio_fattore is up to date.
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/ipcore_dir/vio_prodotto.vhd" in Library work.
+Architecture vio_prodotto_a of Entity vio_prodotto is up to date.
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/ipcore_dir/icon.vhd" in Library work.
+Architecture icon_a of Entity icon is up to date.
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/multiplier_chipscope.vhd" in Library work.
+Architecture behavioral of Entity multiplier_chipscope is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <multiplier_chipscope> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <parallel_multiplier_righe> in library <work> (architecture <behavioral>) with generics.
+	N = 64
+
+Analyzing hierarchy for entity <partial_prod_matrix> in library <work> (architecture <behavioral>) with generics.
+	N = 64
+
+Analyzing hierarchy for entity <partial_sum_row> in library <work> (architecture <behavioral>) with generics.
+	N = 64
+
+Analyzing hierarchy for entity <partial_product_row> in library <work> (architecture <behavioral>) with generics.
+	N = 64
+
+Analyzing hierarchy for entity <ripple_carry_adder> in library <work> (architecture <structural>) with generics.
+	N = 64
+
+Analyzing hierarchy for entity <full_adder> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <multiplier_chipscope> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/multiplier_chipscope.vhd" line 82: Instantiating black box module <vio_fattore>.
+WARNING:Xst:2211 - "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/multiplier_chipscope.vhd" line 88: Instantiating black box module <vio_fattore>.
+WARNING:Xst:2211 - "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/multiplier_chipscope.vhd" line 94: Instantiating black box module <vio_prodotto>.
+WARNING:Xst:2211 - "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/multiplier_chipscope.vhd" line 101: Instantiating black box module <icon>.
+Entity <multiplier_chipscope> analyzed. Unit <multiplier_chipscope> generated.
+
+Analyzing generic Entity <parallel_multiplier_righe> in library <work> (Architecture <behavioral>).
+	N = 64
+Entity <parallel_multiplier_righe> analyzed. Unit <parallel_multiplier_righe> generated.
+
+Analyzing generic Entity <partial_prod_matrix> in library <work> (Architecture <behavioral>).
+	N = 64
+Entity <partial_prod_matrix> analyzed. Unit <partial_prod_matrix> generated.
+
+Analyzing generic Entity <partial_product_row> in library <work> (Architecture <behavioral>).
+	N = 64
+Entity <partial_product_row> analyzed. Unit <partial_product_row> generated.
+
+Analyzing generic Entity <partial_sum_row> in library <work> (Architecture <behavioral>).
+	N = 64
+Entity <partial_sum_row> analyzed. Unit <partial_sum_row> generated.
+
+Analyzing generic Entity <ripple_carry_adder> in library <work> (Architecture <structural>).
+	N = 64
+Entity <ripple_carry_adder> analyzed. Unit <ripple_carry_adder> generated.
+
+Analyzing Entity <full_adder> in library <work> (Architecture <behavioral>).
+Entity <full_adder> analyzed. Unit <full_adder> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <partial_product_row>.
+    Related source file is "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/partial_product_row.vhd".
+Unit <partial_product_row> synthesized.
+
+
+Synthesizing Unit <full_adder>.
+    Related source file is "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/full_adder.vhd".
+    Found 1-bit xor2 for signal <sum>.
+    Found 1-bit xor2 for signal <carry_out$xor0000> created at line 17.
+Unit <full_adder> synthesized.
+
+
+Synthesizing Unit <partial_prod_matrix>.
+    Related source file is "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/partial_prod_matrix.vhd".
+Unit <partial_prod_matrix> synthesized.
+
+
+Synthesizing Unit <ripple_carry_adder>.
+    Related source file is "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/ripple_carry_adder.vhd".
+Unit <ripple_carry_adder> synthesized.
+
+
+Synthesizing Unit <partial_sum_row>.
+    Related source file is "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/partial_sum_row.vhd".
+Unit <partial_sum_row> synthesized.
+
+
+Synthesizing Unit <parallel_multiplier_righe>.
+    Related source file is "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/parallel_multiplier_righe.vhd".
+Unit <parallel_multiplier_righe> synthesized.
+
+
+Synthesizing Unit <multiplier_chipscope>.
+    Related source file is "/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/multiplier_chipscope.vhd".
+Unit <multiplier_chipscope> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 8064
+ 1-bit xor2                                            : 8064
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/vio_fattore.ngc>.
+Reading core <ipcore_dir/vio_prodotto.ngc>.
+Reading core <ipcore_dir/icon.ngc>.
+Loading core <vio_fattore> for timing and area information for instance <FATTORE1>.
+Loading core <vio_fattore> for timing and area information for instance <FATTORE2>.
+Loading core <vio_prodotto> for timing and area information for instance <PRODOTTO>.
+Loading core <icon> for timing and area information for instance <your_instance_name>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 8064
+ 1-bit xor2                                            : 8064
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <multiplier_chipscope> ...
+
+Optimizing unit <ripple_carry_adder> ...
+
+Optimizing unit <parallel_multiplier_righe> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block multiplier_chipscope, actual ratio is 83.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : multiplier_chipscope.ngr
+Top Level Output File Name         : multiplier_chipscope
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 0
+
+Cell Usage :
+# BELS                             : 11129
+#      GND                         : 4
+#      INV                         : 136
+#      LUT1                        : 30
+#      LUT2                        : 178
+#      LUT2_D                      : 10
+#      LUT2_L                      : 22
+#      LUT3                        : 810
+#      LUT3_D                      : 145
+#      LUT3_L                      : 32
+#      LUT4                        : 5438
+#      LUT4_D                      : 3672
+#      LUT4_L                      : 89
+#      MUXCY_L                     : 26
+#      MUXF5                       : 499
+#      MUXF6                       : 4
+#      VCC                         : 4
+#      XORCY                       : 30
+# FlipFlops/Latches                : 1347
+#      FDC                         : 1
+#      FDCE                        : 266
+#      FDE                         : 911
+#      FDR                         : 10
+#      FDRE                        : 159
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# Others                           : 1
+#      BSCAN_SPARTAN3              : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-4 
+
+ Number of Slices:                     5878  out of   8672    67%  
+ Number of Slice Flip Flops:           1347  out of  17344     7%  
+ Number of 4 input LUTs:              10562  out of  17344    60%  
+ Number of IOs:                           0
+ Number of bonded IOBs:                   0  out of    250     0%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                                                                            | Clock buffer(FF name)                                              | Load  |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------+
+your_instance_name/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1                                                                                                                                     | BUFG                                                               | 1090  |
+tmp_prod<0>(Inst_parallel_multiplier_righe/Inst_partial_prod_matrix/matrix[0].Inst_partial_product_row/tmp_prod_0_and00001:O)                                                           | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[0].ASYNC_IN_CELL/U_RISING)  | 2     |
+tmp_prod<1>(Inst_parallel_multiplier_righe/Others_row[0].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)  | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[1].ASYNC_IN_CELL/U_RISING)  | 2     |
+tmp_prod<2>(Inst_parallel_multiplier_righe/Others_row[1].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)  | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[2].ASYNC_IN_CELL/U_RISING)  | 2     |
+tmp_prod<3>(Inst_parallel_multiplier_righe/Others_row[2].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)  | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[3].ASYNC_IN_CELL/U_RISING)  | 2     |
+tmp_prod<4>(Inst_parallel_multiplier_righe/Others_row[3].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)  | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[4].ASYNC_IN_CELL/U_RISING)  | 2     |
+tmp_prod<5>(Inst_parallel_multiplier_righe/Others_row[4].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)  | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[5].ASYNC_IN_CELL/U_RISING)  | 2     |
+tmp_prod<6>(Inst_parallel_multiplier_righe/Others_row[5].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)  | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[6].ASYNC_IN_CELL/U_RISING)  | 2     |
+tmp_prod<7>(Inst_parallel_multiplier_righe/Others_row[6].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)  | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[7].ASYNC_IN_CELL/U_RISING)  | 2     |
+tmp_prod<8>(Inst_parallel_multiplier_righe/Others_row[7].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)  | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[8].ASYNC_IN_CELL/U_RISING)  | 2     |
+tmp_prod<9>(Inst_parallel_multiplier_righe/Others_row[8].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)  | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[9].ASYNC_IN_CELL/U_RISING)  | 2     |
+tmp_prod<10>(Inst_parallel_multiplier_righe/Others_row[9].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O) | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[10].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<11>(Inst_parallel_multiplier_righe/Others_row[10].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[11].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<12>(Inst_parallel_multiplier_righe/Others_row[11].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[12].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<13>(Inst_parallel_multiplier_righe/Others_row[12].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[13].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<14>(Inst_parallel_multiplier_righe/Others_row[13].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[14].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<15>(Inst_parallel_multiplier_righe/Others_row[14].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[15].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<16>(Inst_parallel_multiplier_righe/Others_row[15].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[16].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<17>(Inst_parallel_multiplier_righe/Others_row[16].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[17].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<18>(Inst_parallel_multiplier_righe/Others_row[17].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[18].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<19>(Inst_parallel_multiplier_righe/Others_row[18].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[19].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<20>(Inst_parallel_multiplier_righe/Others_row[19].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[20].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<21>(Inst_parallel_multiplier_righe/Others_row[20].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[21].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<22>(Inst_parallel_multiplier_righe/Others_row[21].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[22].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<23>(Inst_parallel_multiplier_righe/Others_row[22].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[23].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<24>(Inst_parallel_multiplier_righe/Others_row[23].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[24].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<25>(Inst_parallel_multiplier_righe/Others_row[24].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[25].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<26>(Inst_parallel_multiplier_righe/Others_row[25].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[26].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<27>(Inst_parallel_multiplier_righe/Others_row[26].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[27].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<28>(Inst_parallel_multiplier_righe/Others_row[27].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[28].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<29>(Inst_parallel_multiplier_righe/Others_row[28].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[29].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<30>(Inst_parallel_multiplier_righe/Others_row[29].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[30].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<31>(Inst_parallel_multiplier_righe/Others_row[30].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[31].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<32>(Inst_parallel_multiplier_righe/Others_row[31].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[32].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<33>(Inst_parallel_multiplier_righe/Others_row[32].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[33].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<34>(Inst_parallel_multiplier_righe/Others_row[33].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[34].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<35>(Inst_parallel_multiplier_righe/Others_row[34].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[35].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<36>(Inst_parallel_multiplier_righe/Others_row[35].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[36].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<37>(Inst_parallel_multiplier_righe/Others_row[36].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[37].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<38>(Inst_parallel_multiplier_righe/Others_row[37].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[38].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<39>(Inst_parallel_multiplier_righe/Others_row[38].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[39].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<40>(Inst_parallel_multiplier_righe/Others_row[39].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[40].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<41>(Inst_parallel_multiplier_righe/Others_row[40].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[41].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<42>(Inst_parallel_multiplier_righe/Others_row[41].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[42].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<43>(Inst_parallel_multiplier_righe/Others_row[42].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[43].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<44>(Inst_parallel_multiplier_righe/Others_row[43].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[44].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<45>(Inst_parallel_multiplier_righe/Others_row[44].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[45].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<46>(Inst_parallel_multiplier_righe/Others_row[45].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[46].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<47>(Inst_parallel_multiplier_righe/Others_row[46].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[47].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<48>(Inst_parallel_multiplier_righe/Others_row[47].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[48].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<49>(Inst_parallel_multiplier_righe/Others_row[48].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[49].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<50>(Inst_parallel_multiplier_righe/Others_row[49].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[50].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<51>(Inst_parallel_multiplier_righe/Others_row[50].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[51].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<52>(Inst_parallel_multiplier_righe/Others_row[51].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[52].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<53>(Inst_parallel_multiplier_righe/Others_row[52].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[53].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<54>(Inst_parallel_multiplier_righe/Others_row[53].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[54].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<55>(Inst_parallel_multiplier_righe/Others_row[54].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[55].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<56>(Inst_parallel_multiplier_righe/Others_row[55].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[56].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<57>(Inst_parallel_multiplier_righe/Others_row[56].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[57].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<58>(Inst_parallel_multiplier_righe/Others_row[57].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[58].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<59>(Inst_parallel_multiplier_righe/Others_row[58].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[59].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<60>(Inst_parallel_multiplier_righe/Others_row[59].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[60].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<61>(Inst_parallel_multiplier_righe/Others_row[60].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[61].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<62>(Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[62].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<63>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_carry_out_xor0000_Result1:O)| NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[63].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<64>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[1].full_adder_inst/Mxor_sum_Result1:O)              | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[64].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<65>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[2].full_adder_inst/Mxor_sum_Result1:O)              | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[65].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<66>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[3].full_adder_inst/Mxor_sum_Result1:O)              | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[66].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<67>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[4].full_adder_inst/Mxor_sum_Result1:O)              | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[67].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<68>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[5].full_adder_inst/Mxor_sum_Result1:O)              | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[68].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<69>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[6].full_adder_inst/Mxor_sum_Result1:O)              | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[69].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<70>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[7].full_adder_inst/Mxor_sum_Result1:O)              | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[70].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<71>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[8].full_adder_inst/Mxor_sum_Result1:O)              | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[71].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<72>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[9].full_adder_inst/Mxor_sum_Result1:O)              | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[72].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<73>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[10].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[73].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<74>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[74].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<75>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[75].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<76>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[76].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<77>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[14].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[77].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<78>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[15].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[78].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<79>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[16].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[79].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<80>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[17].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[80].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<81>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[18].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[81].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<82>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[19].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[82].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<83>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[20].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[83].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<84>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[21].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[84].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<85>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[22].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[85].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<86>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[23].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[86].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<87>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[24].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[87].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<88>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[25].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[88].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<89>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[26].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[89].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<90>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[27].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[90].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<91>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[28].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[91].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<92>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[29].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[92].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<93>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[30].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[93].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<94>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[31].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[94].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<95>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[32].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[95].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<96>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[33].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[96].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<97>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[34].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[97].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<98>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[35].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[98].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<99>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[36].full_adder_inst/Mxor_sum_Result1:O)             | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[99].ASYNC_IN_CELL/U_RISING) | 2     |
+tmp_prod<100>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[37].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[100].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<101>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[38].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[101].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<102>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[39].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[102].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<103>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[40].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[103].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<104>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[41].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[104].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<105>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[42].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[105].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<106>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[43].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[106].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<107>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[44].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[107].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<108>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[45].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[108].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<109>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[46].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[109].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<110>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[47].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[110].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<111>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[48].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[111].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<112>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[49].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[112].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<113>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[50].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[113].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<114>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[51].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[114].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<115>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[52].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[115].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<116>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[53].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[116].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<117>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[54].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[117].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<118>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[55].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[118].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<119>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[56].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[119].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<120>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[57].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[120].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<121>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[58].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[121].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<122>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[59].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[122].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<123>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[60].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[123].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<124>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[61].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[124].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<125>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[62].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[125].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<126>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[63].full_adder_inst/Mxor_sum_Result1:O)            | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[126].ASYNC_IN_CELL/U_RISING)| 2     |
+tmp_prod<127>(Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[63].full_adder_inst/carry_out1:O)                  | NONE(*)(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[127].ASYNC_IN_CELL/U_RISING)| 2     |
+your_instance_name/U0/iUPDATE_OUT                                                                                                                                                       | NONE(your_instance_name/U0/U_ICON/U_iDATA_CMD)                     | 1     |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------+
+(*) These 128 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
+Control Signal                                                                         | Buffer(FF name)                                                     | Load  |
+---------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
+PRODOTTO/U0/I_VIO/RESET(PRODOTTO/U0/I_VIO/reset_f_edge/I_H2L.U_DOUT:Q)                 | NONE(PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[0].ASYNC_IN_CELL/U_FALLING)     | 256   |
+your_instance_name/U0/U_ICON/U_CMD/iSEL_n(your_instance_name/U0/U_ICON/U_CMD/U_SEL_n:O)| NONE(your_instance_name/U0/U_ICON/U_CMD/G_TARGET[10].I_NE0.U_TARGET)| 10    |
+your_instance_name/U0/U_ICON/iSEL_n(your_instance_name/U0/U_ICON/U_iSEL_n:O)           | NONE(your_instance_name/U0/U_ICON/U_iDATA_CMD)                      | 1     |
+---------------------------------------------------------------------------------------+---------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 220.989ns (Maximum Frequency: 4.525MHz)
+   Minimum input arrival time before clock: 8.787ns
+   Maximum output required time after clock: 0.591ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'your_instance_name/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1'
+  Clock period: 220.989ns (frequency: 4.525MHz)
+  Total number of paths / destination ports: 552978089252698343490196364419772711895753299847020544 / 1760
+-------------------------------------------------------------------------
+Delay:               220.989ns (Levels of Logic = 188)
+  Source:            FATTORE1/U0/I_VIO/GEN_ASYNC_OUT[1].ASYNC_OUT_CELL/USER_REG (FF)
+  Destination:       PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[126].ASYNC_IN_CELL/S_USER_REG (FF)
+  Source Clock:      your_instance_name/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+  Destination Clock: your_instance_name/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+
+  Data Path: FATTORE1/U0/I_VIO/GEN_ASYNC_OUT[1].ASYNC_OUT_CELL/USER_REG to PRODOTTO/U0/I_VIO/GEN_ASYNC_IN[126].ASYNC_IN_CELL/S_USER_REG
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             70   0.591   1.449  U0/I_VIO/GEN_ASYNC_OUT[1].ASYNC_OUT_CELL/USER_REG (ASYNC_OUT<1>)
+     end scope: 'FATTORE1'
+     LUT2:I0->O            3   0.704   0.535  Inst_parallel_multiplier_righe/Others_row[0].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[1].full_adder_inst/Mxor_sum_Result1_SW0 (N186)
+     LUT4:I3->O            1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[1].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[1].full_adder_inst/carry_out1_SW0 (N712)
+     LUT4:I3->O            7   0.704   0.712  Inst_parallel_multiplier_righe/Others_row[1].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[1].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[1].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<2>)
+     LUT4:I3->O            2   0.704   0.451  Inst_parallel_multiplier_righe/Others_row[1].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[2].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[1].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<3>)
+     LUT4_D:I3->LO         1   0.704   0.104  Inst_parallel_multiplier_righe/Others_row[1].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[3].full_adder_inst/carry_out1 (N3840)
+     LUT4:I3->O            3   0.704   0.535  Inst_parallel_multiplier_righe/Others_row[1].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[4].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[1].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<5>)
+     LUT4:I3->O           12   0.704   0.965  Inst_parallel_multiplier_righe/Others_row[1].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[5].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[1].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<6>)
+     LUT4:I3->O            2   0.704   0.451  Inst_parallel_multiplier_righe/Others_row[1].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[6].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[1].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<7>)
+     LUT4:I3->O            6   0.704   0.673  Inst_parallel_multiplier_righe/Others_row[1].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[8].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<135>)
+     LUT4:I3->O            1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[2].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[7].full_adder_inst/carry_out1_SW1 (N492)
+     LUT4_D:I3->O          3   0.704   0.535  Inst_parallel_multiplier_righe/Others_row[2].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[8].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<199>)
+     LUT4:I3->O            1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[3].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[7].full_adder_inst/carry_out1_SW1 (N819)
+     LUT4_D:I3->O          3   0.704   0.535  Inst_parallel_multiplier_righe/Others_row[3].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[8].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<263>)
+     LUT4:I3->O            1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[4].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[7].full_adder_inst/carry_out1_SW1 (N1204)
+     LUT4_D:I3->O          3   0.704   0.535  Inst_parallel_multiplier_righe/Others_row[4].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[8].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<327>)
+     LUT4:I3->O            1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[5].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[7].full_adder_inst/carry_out1_SW1 (N1515)
+     LUT4_D:I3->O          3   0.704   0.535  Inst_parallel_multiplier_righe/Others_row[5].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[8].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<391>)
+     LUT4:I3->O            1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[6].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[7].full_adder_inst/carry_out1_SW1 (N1811)
+     LUT4_D:I3->O          3   0.704   0.535  Inst_parallel_multiplier_righe/Others_row[6].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[8].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<455>)
+     LUT4:I3->O            1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[7].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[7].full_adder_inst/carry_out1_SW1 (N2078)
+     LUT4:I3->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[7].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[8].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<519>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[8].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[7].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[8].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<8>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[8].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[8].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[8].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<9>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[8].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[9].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[8].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<10>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[8].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[10].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[8].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<11>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[8].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[8].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[8].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[8].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[8].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<588>)
+     LUT4:I2->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[9].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<651>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[10].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<714>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[11].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[10].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[11].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<11>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[11].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[11].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[11].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[11].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[11].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<780>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[12].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<843>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[13].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[13].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[13].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[13].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[13].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<908>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[14].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<971>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[15].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[15].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[15].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[15].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[15].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1036>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[16].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1099>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[17].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[17].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[17].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[17].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[17].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1164>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[18].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1227>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[19].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[19].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[19].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[19].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[19].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1292>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[20].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1355>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[21].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[21].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[21].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[21].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[21].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1420>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[22].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1483>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[23].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[23].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[23].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[23].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[23].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1548>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[24].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1611>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[25].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[25].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[25].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[25].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[25].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1676>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[26].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1739>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[27].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[27].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[27].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[27].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[27].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1804>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[28].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1867>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[29].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[29].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[29].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[29].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[29].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1932>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[30].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<1995>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[31].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[31].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[31].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[31].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[31].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<2060>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[32].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<2123>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[33].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[33].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[33].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[33].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[33].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<2188>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[34].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<2251>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[35].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[35].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[35].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[35].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[35].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<2316>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[36].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<2379>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[37].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[37].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[37].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[37].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[37].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<2444>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[38].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<2507>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[39].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[39].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[39].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[39].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[39].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<2572>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[40].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<2635>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[41].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[41].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[41].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[41].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[41].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<2700>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[42].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<2763>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[43].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[43].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[43].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[43].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[43].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<2828>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[44].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<2891>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[45].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[45].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[45].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[45].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[45].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<2956>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[46].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<3019>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[47].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[47].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[47].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[47].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[47].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<3084>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[48].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<3147>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[49].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[49].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[49].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[49].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[49].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<3212>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[50].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<3275>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[51].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[51].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[51].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[51].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[51].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<3340>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[52].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<3403>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[53].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[53].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[53].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[53].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[53].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<3468>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[54].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<3531>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[55].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[55].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[55].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[55].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[55].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<3596>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[56].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<3659>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[57].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[57].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[57].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[57].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[57].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<3724>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[58].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<3787>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[59].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[59].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[59].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[59].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<13>)
+     LUT4:I3->O            2   0.704   0.482  Inst_parallel_multiplier_righe/Others_row[59].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<3852>)
+     LUT4:I2->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[60].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<3915>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<12>)
+     LUT4_D:I3->LO         1   0.704   0.104  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/carry_out1 (N6049)
+     LUT4:I3->O            2   0.704   0.451  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<14>)
+     LUT4_D:I3->LO         1   0.704   0.104  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[14].full_adder_inst/carry_out1 (N6096)
+     LUT4:I3->O            2   0.704   0.451  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[15].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<16>)
+     LUT4_D:I3->LO         1   0.704   0.104  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[16].full_adder_inst/carry_out1 (N6142)
+     LUT4:I3->O            2   0.704   0.451  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[17].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<18>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[18].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<19>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[19].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<20>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[20].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<21>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[21].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<22>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[22].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<23>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[23].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<24>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[24].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<25>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[25].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<26>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[26].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<27>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[27].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<28>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[28].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<29>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[29].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<30>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[30].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<31>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[31].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<32>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[32].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<33>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[33].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<34>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[34].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<35>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[35].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<36>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[36].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<37>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[37].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<38>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[38].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<39>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[39].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<40>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[40].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<41>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[41].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<42>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[42].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<43>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[43].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<44>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[44].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<45>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[45].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<46>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[46].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<47>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[47].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<48>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[48].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<49>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[49].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<50>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[50].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<51>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[51].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<52>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[52].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<53>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[53].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<54>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[54].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<55>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[55].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<56>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[56].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<57>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[57].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<58>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[58].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<59>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[59].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<60>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[60].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<61>)
+     LUT4_D:I3->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[61].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<62>)
+     LUT4:I3->O            2   0.704   0.451  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[62].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<63>)
+     LUT4:I3->O            2   0.704   0.622  Inst_parallel_multiplier_righe/Others_row[61].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[63].full_adder_inst/Mxor_sum_Result1 (Inst_parallel_multiplier_righe/tmp_sum_in<4030>)
+     LUT4_D:I0->O          1   0.704   0.424  Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[62].full_adder_inst/carry_out1 (Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/tmp_carry<63>)
+     LUT4:I3->O            3   0.704   0.706  Inst_parallel_multiplier_righe/Others_row[62].Inst_partial_sum_row_Others/Inst_ripple_carry_adder/full_adder_waterfall[63].full_adder_inst/Mxor_sum_Result1 (tmp_prod<126>)
+     begin scope: 'PRODOTTO'
+     LUT3:I0->O            1   0.704   0.000  U0/I_VIO/GEN_ASYNC_IN[126].ASYNC_IN_CELL/USER_MUX (U0/I_VIO/GEN_ASYNC_IN[126].ASYNC_IN_CELL/mux1_out)
+     FDE:D                     0.308          U0/I_VIO/GEN_ASYNC_IN[126].ASYNC_IN_CELL/S_USER_REG
+    ----------------------------------------
+    Total                    220.989ns (132.547ns logic, 88.442ns route)
+                                       (60.0% logic, 40.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'your_instance_name/U0/iUPDATE_OUT'
+  Clock period: 2.554ns (frequency: 391.543MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.554ns (Levels of Logic = 1)
+  Source:            your_instance_name/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:       your_instance_name/U0/U_ICON/U_iDATA_CMD (FF)
+  Source Clock:      your_instance_name/U0/iUPDATE_OUT rising
+  Destination Clock: your_instance_name/U0/iUPDATE_OUT rising
+
+  Data Path: your_instance_name/U0/U_ICON/U_iDATA_CMD to your_instance_name/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.531  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.704   0.420  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                     0.308          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      2.554ns (1.603ns logic, 0.951ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'your_instance_name/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1'
+  Total number of paths / destination ports: 1039 / 944
+-------------------------------------------------------------------------
+Offset:              8.787ns (Levels of Logic = 7)
+  Source:            your_instance_name/U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS:SHIFT (PAD)
+  Destination:       FATTORE1/U0/I_VIO/U_STATUS/U_TDO (FF)
+  Destination Clock: your_instance_name/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+
+  Data Path: your_instance_name/U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS:SHIFT to FATTORE1/U0/I_VIO/U_STATUS/U_TDO
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    BSCAN_SPARTAN3:SHIFT    3   0.000   0.610  U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS (U0/iSHIFT_OUT)
+     LUT2:I1->O           96   0.704   1.457  U0/U_ICON/U_CTRL_OUT/U_DATA_VALID (U0/U_ICON/U_CTRL_OUT/iDATA_VALID)
+     LUT4:I0->O            1   0.704   0.595  U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[13].U_HCE (CONTROL2<33>)
+     end scope: 'your_instance_name'
+     begin scope: 'PRODOTTO'
+     LUT4:I0->O            1   0.704   0.595  U0/I_VIO/U_STATUS/iSTAT_CNT<7>37 (U0/I_VIO/U_STATUS/iSTAT_CNT<7>37)
+     LUT3:I0->O            1   0.704   0.499  U0/I_VIO/U_STATUS/iSTAT_CNT<7>91_SW0 (N36)
+     LUT4:I1->O            1   0.704   0.499  U0/I_VIO/U_STATUS/iSTAT_CNT<7>91 (U0/I_VIO/U_STATUS/iSTAT_CNT<7>91)
+     LUT4:I1->O            1   0.704   0.000  U0/I_VIO/U_STATUS/iSTAT_CNT<7>221 (U0/I_VIO/U_STATUS/TDO_next)
+     FDE:D                     0.308          U0/I_VIO/U_STATUS/U_TDO
+    ----------------------------------------
+    Total                      8.787ns (4.532ns logic, 4.255ns route)
+                                       (51.6% logic, 48.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'your_instance_name/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.591ns (Levels of Logic = 0)
+  Source:            your_instance_name/U0/U_ICON/U_TDO_reg (FF)
+  Destination:       your_instance_name/U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS:TDO1 (PAD)
+  Source Clock:      your_instance_name/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+
+  Data Path: your_instance_name/U0/U_ICON/U_TDO_reg to your_instance_name/U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS:TDO1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              0   0.591   0.000  U0/U_ICON/U_TDO_reg (U0/U_ICON/iTDO)
+    BSCAN_SPARTAN3:TDO1        0.000          U0/U_ICON/I_YES_BSCAN.U_BS/I_SPARTAN3.ISYN.I_USE_SOFTBSCAN_EQ0.I_3.U_BS
+    ----------------------------------------
+    Total                      0.591ns (0.591ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 99.00 secs
+Total CPU time to Xst completion: 98.53 secs
+ 
+--> 
+
+
+Total memory usage is 996996 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

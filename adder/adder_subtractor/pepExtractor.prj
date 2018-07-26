@@ -1,0 +1,6 @@
+work	"../../progettiGHDL/adder_subtractor/cla_adder_cell.vhd"
+work	"../../progettiGHDL/adder_subtractor/cla_carry_net.vhd"
+work	"../../progettiGHDL/adder_subtractor/generic_adder_subtractor.vhd"
+work	"../../progettiGHDL/adder_subtractor/generic_cla_adder.vhd"
+work	"../../progettiGHDL/adder_subtractor/generic_xor_inverter.vhd"
+work	"../../progettiGHDL/adder_subtractor/nibble_adder.vhd"

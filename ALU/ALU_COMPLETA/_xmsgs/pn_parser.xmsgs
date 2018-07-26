@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/ALU.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/And_N.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/CU_Diveder_Non_Restoring.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/D_Latch.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/M_ZERO_control.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/RCA_subtractor.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/booth_cu.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/booth_multiplier.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/buffer_register.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/cla_adder_cell.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/cla_carry_net.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/counterModN.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/cu_exp.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/divider_non_restoring.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/esponenziale.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/full_adder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/generic_8to1_mux.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/generic_adder_subtractor.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/generic_cla_adder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/generic_counter.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/generic_or.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/generic_xor_inverter.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/left_shift_register.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/mac_cell.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/mac_multiplier.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/mac_row.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/mux_2to1_generic.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/nibble_adder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/op_counter.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/parallel_multiplier_diagonali.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/parallel_multiplier_righe.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/partial_prod_matrix.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/partial_product_row.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/partial_sum_diagonal.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/partial_sum_row.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/restoring_cu.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/restoring_divider.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/right_shift_register.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/ripple_carry_adder.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/robertson_cu.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/robertson_multiplier.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/pietro/Dropbox/ase/componenti vhdl/ALU/ALU_COMPLETA/sign_logic.vhd&quot; into library work</arg>
+</msg>
+
+</messages>
+

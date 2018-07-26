@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/pietro/Scrivania/ISE_PROJECT/DCM/tb_DCM_isim_beh.exe" -prj "/home/pietro/Scrivania/ISE_PROJECT/DCM/tb_DCM_beh.prj" "work.tb_DCM" 

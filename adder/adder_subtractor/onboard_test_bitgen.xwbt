@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ssaa/Dropbox/Universita/magistrale/ASE/progettiISE/adder_subtractor/onboard_test.ncd
+OUTFILE=/home/ssaa/Dropbox/Universita/magistrale/ASE/progettiISE/adder_subtractor/onboard_test.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-4fg320
+WORKINGDIR=/home/ssaa/Dropbox/Universita/magistrale/ASE/progettiISE/adder_subtractor
+LICENSE=WebPack
+USER_INFO=211107748_0_0_771

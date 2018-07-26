@@ -1,0 +1,640 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
+ 
+--> 
+Reading design: adder_chipscope.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "adder_chipscope.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "adder_chipscope"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4-fg320
+
+---- Source Options
+Top Module Name                    : adder_chipscope
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/full_adder.vhd" in Library work.
+Architecture behavioral of Entity full_adder is up to date.
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ripple_carry_adder.vhd" in Library work.
+Architecture structural of Entity ripple_carry_adder is up to date.
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/vio_addend.vhd" in Library work.
+Architecture vio_addend_a of Entity vio_addend is up to date.
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/vio_sum.vhd" in Library work.
+Architecture vio_sum_a of Entity vio_sum is up to date.
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/i_con.vhd" in Library work.
+Architecture i_con_a of Entity i_con is up to date.
+Compiling vhdl file "/home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/rca_chipscope.vhd" in Library work.
+Architecture behavioral of Entity adder_chipscope is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <adder_chipscope> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ripple_carry_adder> in library <work> (architecture <structural>) with generics.
+	N = 128
+
+Analyzing hierarchy for entity <full_adder> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <adder_chipscope> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "/home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/rca_chipscope.vhd" line 58: Instantiating black box module <vio_addend>.
+WARNING:Xst:2211 - "/home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/rca_chipscope.vhd" line 65: Instantiating black box module <vio_addend>.
+WARNING:Xst:2211 - "/home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/rca_chipscope.vhd" line 71: Instantiating black box module <vio_sum>.
+WARNING:Xst:2211 - "/home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/rca_chipscope.vhd" line 77: Instantiating black box module <i_con>.
+Entity <adder_chipscope> analyzed. Unit <adder_chipscope> generated.
+
+Analyzing generic Entity <ripple_carry_adder> in library <work> (Architecture <structural>).
+	N = 128
+Entity <ripple_carry_adder> analyzed. Unit <ripple_carry_adder> generated.
+
+Analyzing Entity <full_adder> in library <work> (Architecture <behavioral>).
+Entity <full_adder> analyzed. Unit <full_adder> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <full_adder>.
+    Related source file is "/home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/full_adder.vhd".
+    Found 1-bit xor2 for signal <sum>.
+    Found 1-bit xor2 for signal <carry_out$xor0000> created at line 17.
+Unit <full_adder> synthesized.
+
+
+Synthesizing Unit <ripple_carry_adder>.
+    Related source file is "/home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ripple_carry_adder.vhd".
+Unit <ripple_carry_adder> synthesized.
+
+
+Synthesizing Unit <adder_chipscope>.
+    Related source file is "/home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/rca_chipscope.vhd".
+Unit <adder_chipscope> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 256
+ 1-bit xor2                                            : 256
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/vio_addend.ngc>.
+Reading core <ipcore_dir/vio_sum.ngc>.
+Reading core <ipcore_dir/i_con.ngc>.
+Loading core <vio_addend> for timing and area information for instance <VIO_ADD_1_INST>.
+Loading core <vio_addend> for timing and area information for instance <VIO_ADD_2_INST>.
+Loading core <vio_sum> for timing and area information for instance <VIO_SUM_INST>.
+Loading core <i_con> for timing and area information for instance <I_CON_INST>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Xors                                                 : 256
+ 1-bit xor2                                            : 256
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <adder_chipscope> ...
+
+Optimizing unit <ripple_carry_adder> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block adder_chipscope, actual ratio is 15.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : adder_chipscope.ngr
+Top Level Output File Name         : adder_chipscope
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 2
+
+Cell Usage :
+# BELS                             : 1498
+#      GND                         : 4
+#      INV                         : 136
+#      LUT1                        : 30
+#      LUT2                        : 101
+#      LUT3                        : 645
+#      LUT3_D                      : 57
+#      LUT3_L                      : 10
+#      LUT4                        : 364
+#      LUT4_D                      : 71
+#      MUXCY_L                     : 26
+#      MUXF5                       : 16
+#      MUXF6                       : 4
+#      VCC                         : 4
+#      XORCY                       : 30
+# FlipFlops/Latches                : 1859
+#      FDC                         : 1
+#      FDCE                        : 266
+#      FDE                         : 1295
+#      FDR                         : 10
+#      FDRE                        : 287
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+# Others                           : 1
+#      BSCAN_SPARTAN3              : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-4 
+
+ Number of Slices:                     1528  out of   8672    17%  
+ Number of Slice Flip Flops:           1859  out of  17344    10%  
+ Number of 4 input LUTs:               1414  out of  17344     8%  
+ Number of IOs:                           2
+ Number of bonded IOBs:                   2  out of    250     0%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------+
+Clock Signal                                                                                             | Clock buffer(FF name)                                                  | Load  |
+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------+
+I_CON_INST/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1                                                              | BUFG                                                                   | 1602  |
+virtual_in_sum<0>(Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/Mxor_sum_Result1:O)    | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[0].ASYNC_IN_CELL/U_RISING)  | 2     |
+virtual_in_sum<1>(Inst_ripple_carry_adder/full_adder_waterfall[1].full_adder_inst/Mxor_sum_Result1:O)    | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[1].ASYNC_IN_CELL/U_RISING)  | 2     |
+virtual_in_sum<2>(Inst_ripple_carry_adder/full_adder_waterfall[2].full_adder_inst/Mxor_sum_Result1:O)    | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[2].ASYNC_IN_CELL/U_RISING)  | 2     |
+virtual_in_sum<3>(Inst_ripple_carry_adder/full_adder_waterfall[3].full_adder_inst/Mxor_sum_Result1_f5:O) | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[3].ASYNC_IN_CELL/U_RISING)  | 2     |
+virtual_in_sum<4>(Inst_ripple_carry_adder/full_adder_waterfall[4].full_adder_inst/Mxor_sum_Result1:O)    | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[4].ASYNC_IN_CELL/U_RISING)  | 2     |
+virtual_in_sum<5>(Inst_ripple_carry_adder/full_adder_waterfall[5].full_adder_inst/Mxor_sum_Result1_f5:O) | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[5].ASYNC_IN_CELL/U_RISING)  | 2     |
+virtual_in_sum<6>(Inst_ripple_carry_adder/full_adder_waterfall[6].full_adder_inst/Mxor_sum_Result1:O)    | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[6].ASYNC_IN_CELL/U_RISING)  | 2     |
+virtual_in_sum<7>(Inst_ripple_carry_adder/full_adder_waterfall[7].full_adder_inst/Mxor_sum_Result1_f5:O) | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[7].ASYNC_IN_CELL/U_RISING)  | 2     |
+virtual_in_sum<8>(Inst_ripple_carry_adder/full_adder_waterfall[8].full_adder_inst/Mxor_sum_Result1:O)    | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[8].ASYNC_IN_CELL/U_RISING)  | 2     |
+virtual_in_sum<9>(Inst_ripple_carry_adder/full_adder_waterfall[9].full_adder_inst/Mxor_sum_Result1_f5:O) | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[9].ASYNC_IN_CELL/U_RISING)  | 2     |
+virtual_in_sum<10>(Inst_ripple_carry_adder/full_adder_waterfall[10].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[10].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<11>(Inst_ripple_carry_adder/full_adder_waterfall[11].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[11].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<12>(Inst_ripple_carry_adder/full_adder_waterfall[12].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[12].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<13>(Inst_ripple_carry_adder/full_adder_waterfall[13].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[13].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<14>(Inst_ripple_carry_adder/full_adder_waterfall[14].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[14].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<15>(Inst_ripple_carry_adder/full_adder_waterfall[15].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[15].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<16>(Inst_ripple_carry_adder/full_adder_waterfall[16].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[16].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<17>(Inst_ripple_carry_adder/full_adder_waterfall[17].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[17].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<18>(Inst_ripple_carry_adder/full_adder_waterfall[18].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[18].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<19>(Inst_ripple_carry_adder/full_adder_waterfall[19].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[19].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<20>(Inst_ripple_carry_adder/full_adder_waterfall[20].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[20].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<21>(Inst_ripple_carry_adder/full_adder_waterfall[21].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[21].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<22>(Inst_ripple_carry_adder/full_adder_waterfall[22].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[22].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<23>(Inst_ripple_carry_adder/full_adder_waterfall[23].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[23].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<24>(Inst_ripple_carry_adder/full_adder_waterfall[24].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[24].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<25>(Inst_ripple_carry_adder/full_adder_waterfall[25].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[25].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<26>(Inst_ripple_carry_adder/full_adder_waterfall[26].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[26].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<27>(Inst_ripple_carry_adder/full_adder_waterfall[27].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[27].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<28>(Inst_ripple_carry_adder/full_adder_waterfall[28].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[28].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<29>(Inst_ripple_carry_adder/full_adder_waterfall[29].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[29].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<30>(Inst_ripple_carry_adder/full_adder_waterfall[30].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[30].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<31>(Inst_ripple_carry_adder/full_adder_waterfall[31].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[31].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<32>(Inst_ripple_carry_adder/full_adder_waterfall[32].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[32].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<33>(Inst_ripple_carry_adder/full_adder_waterfall[33].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[33].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<34>(Inst_ripple_carry_adder/full_adder_waterfall[34].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[34].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<35>(Inst_ripple_carry_adder/full_adder_waterfall[35].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[35].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<36>(Inst_ripple_carry_adder/full_adder_waterfall[36].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[36].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<37>(Inst_ripple_carry_adder/full_adder_waterfall[37].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[37].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<38>(Inst_ripple_carry_adder/full_adder_waterfall[38].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[38].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<39>(Inst_ripple_carry_adder/full_adder_waterfall[39].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[39].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<40>(Inst_ripple_carry_adder/full_adder_waterfall[40].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[40].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<41>(Inst_ripple_carry_adder/full_adder_waterfall[41].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[41].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<42>(Inst_ripple_carry_adder/full_adder_waterfall[42].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[42].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<43>(Inst_ripple_carry_adder/full_adder_waterfall[43].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[43].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<44>(Inst_ripple_carry_adder/full_adder_waterfall[44].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[44].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<45>(Inst_ripple_carry_adder/full_adder_waterfall[45].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[45].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<46>(Inst_ripple_carry_adder/full_adder_waterfall[46].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[46].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<47>(Inst_ripple_carry_adder/full_adder_waterfall[47].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[47].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<48>(Inst_ripple_carry_adder/full_adder_waterfall[48].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[48].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<49>(Inst_ripple_carry_adder/full_adder_waterfall[49].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[49].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<50>(Inst_ripple_carry_adder/full_adder_waterfall[50].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[50].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<51>(Inst_ripple_carry_adder/full_adder_waterfall[51].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[51].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<52>(Inst_ripple_carry_adder/full_adder_waterfall[52].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[52].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<53>(Inst_ripple_carry_adder/full_adder_waterfall[53].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[53].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<54>(Inst_ripple_carry_adder/full_adder_waterfall[54].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[54].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<55>(Inst_ripple_carry_adder/full_adder_waterfall[55].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[55].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<56>(Inst_ripple_carry_adder/full_adder_waterfall[56].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[56].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<57>(Inst_ripple_carry_adder/full_adder_waterfall[57].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[57].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<58>(Inst_ripple_carry_adder/full_adder_waterfall[58].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[58].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<59>(Inst_ripple_carry_adder/full_adder_waterfall[59].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[59].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<60>(Inst_ripple_carry_adder/full_adder_waterfall[60].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[60].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<61>(Inst_ripple_carry_adder/full_adder_waterfall[61].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[61].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<62>(Inst_ripple_carry_adder/full_adder_waterfall[62].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[62].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<63>(Inst_ripple_carry_adder/full_adder_waterfall[63].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[63].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<64>(Inst_ripple_carry_adder/full_adder_waterfall[64].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[64].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<65>(Inst_ripple_carry_adder/full_adder_waterfall[65].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[65].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<66>(Inst_ripple_carry_adder/full_adder_waterfall[66].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[66].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<67>(Inst_ripple_carry_adder/full_adder_waterfall[67].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[67].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<68>(Inst_ripple_carry_adder/full_adder_waterfall[68].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[68].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<69>(Inst_ripple_carry_adder/full_adder_waterfall[69].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[69].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<70>(Inst_ripple_carry_adder/full_adder_waterfall[70].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[70].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<71>(Inst_ripple_carry_adder/full_adder_waterfall[71].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[71].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<72>(Inst_ripple_carry_adder/full_adder_waterfall[72].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[72].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<73>(Inst_ripple_carry_adder/full_adder_waterfall[73].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[73].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<74>(Inst_ripple_carry_adder/full_adder_waterfall[74].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[74].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<75>(Inst_ripple_carry_adder/full_adder_waterfall[75].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[75].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<76>(Inst_ripple_carry_adder/full_adder_waterfall[76].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[76].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<77>(Inst_ripple_carry_adder/full_adder_waterfall[77].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[77].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<78>(Inst_ripple_carry_adder/full_adder_waterfall[78].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[78].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<79>(Inst_ripple_carry_adder/full_adder_waterfall[79].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[79].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<80>(Inst_ripple_carry_adder/full_adder_waterfall[80].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[80].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<81>(Inst_ripple_carry_adder/full_adder_waterfall[81].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[81].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<82>(Inst_ripple_carry_adder/full_adder_waterfall[82].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[82].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<83>(Inst_ripple_carry_adder/full_adder_waterfall[83].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[83].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<84>(Inst_ripple_carry_adder/full_adder_waterfall[84].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[84].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<85>(Inst_ripple_carry_adder/full_adder_waterfall[85].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[85].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<86>(Inst_ripple_carry_adder/full_adder_waterfall[86].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[86].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<87>(Inst_ripple_carry_adder/full_adder_waterfall[87].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[87].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<88>(Inst_ripple_carry_adder/full_adder_waterfall[88].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[88].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<89>(Inst_ripple_carry_adder/full_adder_waterfall[89].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[89].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<90>(Inst_ripple_carry_adder/full_adder_waterfall[90].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[90].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<91>(Inst_ripple_carry_adder/full_adder_waterfall[91].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[91].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<92>(Inst_ripple_carry_adder/full_adder_waterfall[92].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[92].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<93>(Inst_ripple_carry_adder/full_adder_waterfall[93].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[93].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<94>(Inst_ripple_carry_adder/full_adder_waterfall[94].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[94].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<95>(Inst_ripple_carry_adder/full_adder_waterfall[95].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[95].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<96>(Inst_ripple_carry_adder/full_adder_waterfall[96].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[96].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<97>(Inst_ripple_carry_adder/full_adder_waterfall[97].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[97].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<98>(Inst_ripple_carry_adder/full_adder_waterfall[98].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[98].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<99>(Inst_ripple_carry_adder/full_adder_waterfall[99].full_adder_inst/Mxor_sum_Result1:O)  | NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[99].ASYNC_IN_CELL/U_RISING) | 2     |
+virtual_in_sum<100>(Inst_ripple_carry_adder/full_adder_waterfall[100].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[100].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<101>(Inst_ripple_carry_adder/full_adder_waterfall[101].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[101].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<102>(Inst_ripple_carry_adder/full_adder_waterfall[102].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[102].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<103>(Inst_ripple_carry_adder/full_adder_waterfall[103].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[103].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<104>(Inst_ripple_carry_adder/full_adder_waterfall[104].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[104].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<105>(Inst_ripple_carry_adder/full_adder_waterfall[105].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[105].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<106>(Inst_ripple_carry_adder/full_adder_waterfall[106].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[106].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<107>(Inst_ripple_carry_adder/full_adder_waterfall[107].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[107].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<108>(Inst_ripple_carry_adder/full_adder_waterfall[108].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[108].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<109>(Inst_ripple_carry_adder/full_adder_waterfall[109].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[109].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<110>(Inst_ripple_carry_adder/full_adder_waterfall[110].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[110].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<111>(Inst_ripple_carry_adder/full_adder_waterfall[111].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[111].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<112>(Inst_ripple_carry_adder/full_adder_waterfall[112].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[112].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<113>(Inst_ripple_carry_adder/full_adder_waterfall[113].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[113].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<114>(Inst_ripple_carry_adder/full_adder_waterfall[114].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[114].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<115>(Inst_ripple_carry_adder/full_adder_waterfall[115].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[115].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<116>(Inst_ripple_carry_adder/full_adder_waterfall[116].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[116].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<117>(Inst_ripple_carry_adder/full_adder_waterfall[117].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[117].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<118>(Inst_ripple_carry_adder/full_adder_waterfall[118].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[118].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<119>(Inst_ripple_carry_adder/full_adder_waterfall[119].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[119].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<120>(Inst_ripple_carry_adder/full_adder_waterfall[120].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[120].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<121>(Inst_ripple_carry_adder/full_adder_waterfall[121].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[121].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<122>(Inst_ripple_carry_adder/full_adder_waterfall[122].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[122].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<123>(Inst_ripple_carry_adder/full_adder_waterfall[123].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[123].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<124>(Inst_ripple_carry_adder/full_adder_waterfall[124].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[124].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<125>(Inst_ripple_carry_adder/full_adder_waterfall[125].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[125].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<126>(Inst_ripple_carry_adder/full_adder_waterfall[126].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[126].ASYNC_IN_CELL/U_RISING)| 2     |
+virtual_in_sum<127>(Inst_ripple_carry_adder/full_adder_waterfall[127].full_adder_inst/Mxor_sum_Result1:O)| NONE(*)(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[127].ASYNC_IN_CELL/U_RISING)| 2     |
+I_CON_INST/U0/iUPDATE_OUT                                                                                | NONE(I_CON_INST/U0/U_ICON/U_iDATA_CMD)                                 | 1     |
+---------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------+-------+
+(*) These 128 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------------------------------------------+--------------------------------------------------------------------+-------+
+Control Signal                                                                | Buffer(FF name)                                                    | Load  |
+------------------------------------------------------------------------------+--------------------------------------------------------------------+-------+
+VIO_SUM_INST/U0/I_VIO/RESET(VIO_SUM_INST/U0/I_VIO/reset_f_edge/I_H2L.U_DOUT:Q)| NONE(VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[0].ASYNC_IN_CELL/U_FALLING)| 256   |
+I_CON_INST/U0/U_ICON/U_CMD/iSEL_n(I_CON_INST/U0/U_ICON/U_CMD/U_SEL_n:O)       | NONE(I_CON_INST/U0/U_ICON/U_CMD/G_TARGET[10].I_NE0.U_TARGET)       | 10    |
+I_CON_INST/U0/U_ICON/iSEL_n(I_CON_INST/U0/U_ICON/U_iSEL_n:O)                  | NONE(I_CON_INST/U0/U_ICON/U_iDATA_CMD)                             | 1     |
+------------------------------------------------------------------------------+--------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 14.692ns (Maximum Frequency: 68.064MHz)
+   Minimum input arrival time before clock: 15.228ns
+   Maximum output required time after clock: 19.991ns
+   Maximum combinational path delay: 20.527ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'I_CON_INST/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1'
+  Clock period: 14.692ns (frequency: 68.064MHz)
+  Total number of paths / destination ports: 180196 / 2912
+-------------------------------------------------------------------------
+Delay:               14.692ns (Levels of Logic = 11)
+  Source:            VIO_ADD_2_INST/U0/I_VIO/GEN_ASYNC_OUT[30].ASYNC_OUT_CELL/USER_REG (FF)
+  Destination:       VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[113].ASYNC_IN_CELL/S_USER_REG (FF)
+  Source Clock:      I_CON_INST/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+  Destination Clock: I_CON_INST/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+
+  Data Path: VIO_ADD_2_INST/U0/I_VIO/GEN_ASYNC_OUT[30].ASYNC_OUT_CELL/USER_REG to VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[113].ASYNC_IN_CELL/S_USER_REG
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.591   0.712  U0/I_VIO/GEN_ASYNC_OUT[30].ASYNC_OUT_CELL/USER_REG (ASYNC_OUT<30>)
+     end scope: 'VIO_ADD_2_INST'
+     LUT4:I1->O            2   0.704   0.526  Inst_ripple_carry_adder/full_adder_waterfall[30].full_adder_inst/carry_out1_SW0 (N148)
+     LUT3:I1->O            2   0.704   0.622  Inst_ripple_carry_adder/full_adder_waterfall[29].full_adder_inst/carry_out1_SW1 (N279)
+     LUT3:I0->O            2   0.704   0.526  Inst_ripple_carry_adder/full_adder_waterfall[27].full_adder_inst/carry_out1_SW0 (N341)
+     LUT3:I1->O            4   0.704   0.762  Inst_ripple_carry_adder/full_adder_waterfall[23].full_adder_inst/carry_out1_SW1 (N395)
+     LUT3:I0->O           13   0.704   1.158  Inst_ripple_carry_adder/full_adder_waterfall[31].full_adder_inst/carry_out1 (Inst_ripple_carry_adder/tmp_carry<32>)
+     LUT4:I0->O            1   0.704   0.000  Inst_ripple_carry_adder/full_adder_waterfall[95].full_adder_inst/carry_out11 (Inst_ripple_carry_adder/full_adder_waterfall[95].full_adder_inst/carry_out1)
+     MUXF5:I1->O          17   0.321   1.086  Inst_ripple_carry_adder/full_adder_waterfall[95].full_adder_inst/carry_out1_f5 (Inst_ripple_carry_adder/tmp_carry<96>)
+     LUT3_D:I2->O         16   0.704   1.038  Inst_ripple_carry_adder/full_adder_waterfall[111].full_adder_inst/carry_out1 (Inst_ripple_carry_adder/tmp_carry<112>)
+     LUT4:I3->O            3   0.704   0.706  Inst_ripple_carry_adder/full_adder_waterfall[113].full_adder_inst/Mxor_sum_Result1 (virtual_in_sum<113>)
+     begin scope: 'VIO_SUM_INST'
+     LUT3:I0->O            1   0.704   0.000  U0/I_VIO/GEN_ASYNC_IN[113].ASYNC_IN_CELL/USER_MUX (U0/I_VIO/GEN_ASYNC_IN[113].ASYNC_IN_CELL/mux1_out)
+     FDE:D                     0.308          U0/I_VIO/GEN_ASYNC_IN[113].ASYNC_IN_CELL/S_USER_REG
+    ----------------------------------------
+    Total                     14.692ns (7.556ns logic, 7.136ns route)
+                                       (51.4% logic, 48.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'I_CON_INST/U0/iUPDATE_OUT'
+  Clock period: 2.554ns (frequency: 391.543MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.554ns (Levels of Logic = 1)
+  Source:            I_CON_INST/U0/U_ICON/U_iDATA_CMD (FF)
+  Destination:       I_CON_INST/U0/U_ICON/U_iDATA_CMD (FF)
+  Source Clock:      I_CON_INST/U0/iUPDATE_OUT rising
+  Destination Clock: I_CON_INST/U0/iUPDATE_OUT rising
+
+  Data Path: I_CON_INST/U0/U_ICON/U_iDATA_CMD to I_CON_INST/U0/U_ICON/U_iDATA_CMD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              3   0.591   0.531  U0/U_ICON/U_iDATA_CMD (U0/U_ICON/iDATA_CMD)
+     INV:I->O              1   0.704   0.420  U0/U_ICON/U_iDATA_CMD_n (U0/U_ICON/iDATA_CMD_n)
+     FDC:D                     0.308          U0/U_ICON/U_iDATA_CMD
+    ----------------------------------------
+    Total                      2.554ns (1.603ns logic, 0.951ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'I_CON_INST/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1'
+  Total number of paths / destination ports: 1715 / 1456
+-------------------------------------------------------------------------
+Offset:              15.228ns (Levels of Logic = 13)
+  Source:            carry_in (PAD)
+  Destination:       VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[113].ASYNC_IN_CELL/S_USER_REG (FF)
+  Destination Clock: I_CON_INST/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+
+  Data Path: carry_in to VIO_SUM_INST/U0/I_VIO/GEN_ASYNC_IN[113].ASYNC_IN_CELL/S_USER_REG
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.622  carry_in_IBUF (carry_in_IBUF)
+     LUT3_D:I0->LO         1   0.704   0.135  Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/carry_out1 (N766)
+     LUT3:I2->O            4   0.704   0.622  Inst_ripple_carry_adder/full_adder_waterfall[1].full_adder_inst/carry_out1 (Inst_ripple_carry_adder/tmp_carry<2>)
+     LUT3_D:I2->LO         1   0.704   0.135  Inst_ripple_carry_adder/full_adder_waterfall[3].full_adder_inst/carry_out1 (N843)
+     LUT3:I2->O            6   0.704   0.704  Inst_ripple_carry_adder/full_adder_waterfall[7].full_adder_inst/carry_out1 (Inst_ripple_carry_adder/tmp_carry<8>)
+     LUT3_D:I2->LO         1   0.704   0.135  Inst_ripple_carry_adder/full_adder_waterfall[15].full_adder_inst/carry_out1 (N870)
+     LUT3:I2->O           13   0.704   1.158  Inst_ripple_carry_adder/full_adder_waterfall[31].full_adder_inst/carry_out1 (Inst_ripple_carry_adder/tmp_carry<32>)
+     LUT4:I0->O            1   0.704   0.000  Inst_ripple_carry_adder/full_adder_waterfall[95].full_adder_inst/carry_out11 (Inst_ripple_carry_adder/full_adder_waterfall[95].full_adder_inst/carry_out1)
+     MUXF5:I1->O          17   0.321   1.086  Inst_ripple_carry_adder/full_adder_waterfall[95].full_adder_inst/carry_out1_f5 (Inst_ripple_carry_adder/tmp_carry<96>)
+     LUT3_D:I2->O         16   0.704   1.038  Inst_ripple_carry_adder/full_adder_waterfall[111].full_adder_inst/carry_out1 (Inst_ripple_carry_adder/tmp_carry<112>)
+     LUT4:I3->O            3   0.704   0.706  Inst_ripple_carry_adder/full_adder_waterfall[113].full_adder_inst/Mxor_sum_Result1 (virtual_in_sum<113>)
+     begin scope: 'VIO_SUM_INST'
+     LUT3:I0->O            1   0.704   0.000  U0/I_VIO/GEN_ASYNC_IN[113].ASYNC_IN_CELL/USER_MUX (U0/I_VIO/GEN_ASYNC_IN[113].ASYNC_IN_CELL/mux1_out)
+     FDE:D                     0.308          U0/I_VIO/GEN_ASYNC_IN[113].ASYNC_IN_CELL/S_USER_REG
+    ----------------------------------------
+    Total                     15.228ns (8.887ns logic, 6.341ns route)
+                                       (58.4% logic, 41.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'I_CON_INST/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1'
+  Total number of paths / destination ports: 12958 / 2
+-------------------------------------------------------------------------
+Offset:              19.991ns (Levels of Logic = 15)
+  Source:            VIO_ADD_2_INST/U0/I_VIO/GEN_ASYNC_OUT[30].ASYNC_OUT_CELL/USER_REG (FF)
+  Destination:       carry_out (PAD)
+  Source Clock:      I_CON_INST/U0/U_ICON/I_YES_BSCAN.U_BS/DRCK1 rising
+
+  Data Path: VIO_ADD_2_INST/U0/I_VIO/GEN_ASYNC_OUT[30].ASYNC_OUT_CELL/USER_REG to carry_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.591   0.712  U0/I_VIO/GEN_ASYNC_OUT[30].ASYNC_OUT_CELL/USER_REG (ASYNC_OUT<30>)
+     end scope: 'VIO_ADD_2_INST'
+     LUT4:I1->O            2   0.704   0.526  Inst_ripple_carry_adder/full_adder_waterfall[30].full_adder_inst/carry_out1_SW0 (N148)
+     LUT3:I1->O            2   0.704   0.622  Inst_ripple_carry_adder/full_adder_waterfall[29].full_adder_inst/carry_out1_SW1 (N279)
+     LUT3:I0->O            2   0.704   0.526  Inst_ripple_carry_adder/full_adder_waterfall[27].full_adder_inst/carry_out1_SW0 (N341)
+     LUT3:I1->O            4   0.704   0.762  Inst_ripple_carry_adder/full_adder_waterfall[23].full_adder_inst/carry_out1_SW1 (N395)
+     LUT3:I0->O           13   0.704   1.158  Inst_ripple_carry_adder/full_adder_waterfall[31].full_adder_inst/carry_out1 (Inst_ripple_carry_adder/tmp_carry<32>)
+     LUT4:I0->O            1   0.704   0.000  Inst_ripple_carry_adder/full_adder_waterfall[95].full_adder_inst/carry_out11 (Inst_ripple_carry_adder/full_adder_waterfall[95].full_adder_inst/carry_out1)
+     MUXF5:I1->O          17   0.321   1.086  Inst_ripple_carry_adder/full_adder_waterfall[95].full_adder_inst/carry_out1_f5 (Inst_ripple_carry_adder/tmp_carry<96>)
+     LUT3_D:I2->O         16   0.704   1.209  Inst_ripple_carry_adder/full_adder_waterfall[111].full_adder_inst/carry_out1 (Inst_ripple_carry_adder/tmp_carry<112>)
+     LUT3:I0->O            2   0.704   0.622  Inst_ripple_carry_adder/full_adder_waterfall[122].full_adder_inst/carry_out1 (Inst_ripple_carry_adder/tmp_carry<123>)
+     LUT4:I0->O            1   0.704   0.000  Inst_ripple_carry_adder/full_adder_waterfall[125].full_adder_inst/carry_out11 (Inst_ripple_carry_adder/full_adder_waterfall[125].full_adder_inst/carry_out1)
+     MUXF5:I1->O           2   0.321   0.482  Inst_ripple_carry_adder/full_adder_waterfall[125].full_adder_inst/carry_out1_f5 (Inst_ripple_carry_adder/tmp_carry<126>)
+     LUT4:I2->O            1   0.704   0.000  Inst_ripple_carry_adder/full_adder_waterfall[127].full_adder_inst/carry_out11 (Inst_ripple_carry_adder/full_adder_waterfall[127].full_adder_inst/carry_out1)
+     MUXF5:I1->O           1   0.321   0.420  Inst_ripple_carry_adder/full_adder_waterfall[127].full_adder_inst/carry_out1_f5 (carry_out_OBUF)
+     OBUF:I->O                 3.272          carry_out_OBUF (carry_out)
+    ----------------------------------------
+    Total                     19.991ns (11.866ns logic, 8.125ns route)
+                                       (59.4% logic, 40.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 8 / 1
+-------------------------------------------------------------------------
+Delay:               20.527ns (Levels of Logic = 16)
+  Source:            carry_in (PAD)
+  Destination:       carry_out (PAD)
+
+  Data Path: carry_in to carry_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.622  carry_in_IBUF (carry_in_IBUF)
+     LUT3_D:I0->LO         1   0.704   0.135  Inst_ripple_carry_adder/full_adder_waterfall[0].full_adder_inst/carry_out1 (N766)
+     LUT3:I2->O            4   0.704   0.622  Inst_ripple_carry_adder/full_adder_waterfall[1].full_adder_inst/carry_out1 (Inst_ripple_carry_adder/tmp_carry<2>)
+     LUT3_D:I2->LO         1   0.704   0.135  Inst_ripple_carry_adder/full_adder_waterfall[3].full_adder_inst/carry_out1 (N843)
+     LUT3:I2->O            6   0.704   0.704  Inst_ripple_carry_adder/full_adder_waterfall[7].full_adder_inst/carry_out1 (Inst_ripple_carry_adder/tmp_carry<8>)
+     LUT3_D:I2->LO         1   0.704   0.135  Inst_ripple_carry_adder/full_adder_waterfall[15].full_adder_inst/carry_out1 (N870)
+     LUT3:I2->O           13   0.704   1.158  Inst_ripple_carry_adder/full_adder_waterfall[31].full_adder_inst/carry_out1 (Inst_ripple_carry_adder/tmp_carry<32>)
+     LUT4:I0->O            1   0.704   0.000  Inst_ripple_carry_adder/full_adder_waterfall[95].full_adder_inst/carry_out11 (Inst_ripple_carry_adder/full_adder_waterfall[95].full_adder_inst/carry_out1)
+     MUXF5:I1->O          17   0.321   1.086  Inst_ripple_carry_adder/full_adder_waterfall[95].full_adder_inst/carry_out1_f5 (Inst_ripple_carry_adder/tmp_carry<96>)
+     LUT3_D:I2->O         16   0.704   1.209  Inst_ripple_carry_adder/full_adder_waterfall[111].full_adder_inst/carry_out1 (Inst_ripple_carry_adder/tmp_carry<112>)
+     LUT3:I0->O            2   0.704   0.622  Inst_ripple_carry_adder/full_adder_waterfall[122].full_adder_inst/carry_out1 (Inst_ripple_carry_adder/tmp_carry<123>)
+     LUT4:I0->O            1   0.704   0.000  Inst_ripple_carry_adder/full_adder_waterfall[125].full_adder_inst/carry_out11 (Inst_ripple_carry_adder/full_adder_waterfall[125].full_adder_inst/carry_out1)
+     MUXF5:I1->O           2   0.321   0.482  Inst_ripple_carry_adder/full_adder_waterfall[125].full_adder_inst/carry_out1_f5 (Inst_ripple_carry_adder/tmp_carry<126>)
+     LUT4:I2->O            1   0.704   0.000  Inst_ripple_carry_adder/full_adder_waterfall[127].full_adder_inst/carry_out11 (Inst_ripple_carry_adder/full_adder_waterfall[127].full_adder_inst/carry_out1)
+     MUXF5:I1->O           1   0.321   0.420  Inst_ripple_carry_adder/full_adder_waterfall[127].full_adder_inst/carry_out1_f5 (carry_out_OBUF)
+     OBUF:I->O                 3.272          carry_out_OBUF (carry_out)
+    ----------------------------------------
+    Total                     20.527ns (13.197ns logic, 7.330ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.82 secs
+ 
+--> 
+
+
+Total memory usage is 551304 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

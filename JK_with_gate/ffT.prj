@@ -1,0 +1,5 @@
+vhdl work "myNor3.vhd"
+vhdl work "myAND.vhd"
+vhdl work "RS_Clocked_Preset.vhd"
+vhdl work "ffJK.vhd"
+vhdl work "ffT.vhd"

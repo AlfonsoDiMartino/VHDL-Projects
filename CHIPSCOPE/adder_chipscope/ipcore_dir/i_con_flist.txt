@@ -1,0 +1,16 @@
+# Output products list for <i_con>
+_xmsgs/pn_parser.xmsgs
+i_con.asy
+i_con.constraints/i_con.ucf
+i_con.constraints/i_con.xdc
+i_con.gise
+i_con.ngc
+i_con.sym
+i_con.ucf
+i_con.vhd
+i_con.vho
+i_con.xco
+i_con.xdc
+i_con.xise
+i_con_flist.txt
+i_con_xmdf.tcl

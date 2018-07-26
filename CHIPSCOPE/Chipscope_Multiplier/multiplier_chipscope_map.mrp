@@ -1,0 +1,1046 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'multiplier_chipscope'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off
+-c 100 -o multiplier_chipscope_map.ncd multiplier_chipscope.ngd
+multiplier_chipscope.pcf 
+Target Device  : xc3s1200e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Mon Jan  4 21:51:39 2016
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:  130
+Logic Utilization:
+  Number of Slice Flip Flops:         1,343 out of  17,344    7%
+  Number of 4 input LUTs:            10,242 out of  17,344   59%
+Logic Distribution:
+  Number of occupied Slices:          6,184 out of   8,672   71%
+    Number of Slices containing only related logic:   6,184 out of   6,184 100%
+    Number of Slices containing unrelated logic:          0 out of   6,184   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:      10,272 out of  17,344   59%
+    Number used as logic:            10,242
+    Number used as a route-thru:         30
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of BSCANs:                       1 out of       1  100%
+
+Average Fanout of Non-Clock Nets:                3.93
+
+Peak Memory Usage:  662 MB
+Total REAL time to MAP completion:  8 secs 
+Total CPU time to MAP completion:   8 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<80> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<72> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<64> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<56> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<48> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<91> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<83> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<75> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<67> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<59> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<2> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<110> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<102> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<7> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<41> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<33> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<25> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<17> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<121> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<113> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<105> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<31> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<23> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<15> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<96> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<88> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<90> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<82> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<74> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<66> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<58> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<92> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<84> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<76> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<68> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<120> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<112> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<104> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<9> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<50> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<42> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<34> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<26> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<18> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<122> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<114> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<106> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<8> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<98> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<0> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<93> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<85> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<77> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<69> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<51> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<43> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<35> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<27> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<19> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<123> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<115> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<107> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<94> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<86> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<78> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<97> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<89> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<124> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<116> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<108> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<10> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<60> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<52> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<44> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<36> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<28> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<61> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<53> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<45> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<37> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<29> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<4> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<95> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<87> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<79> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<126> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<118> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<1> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<20> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<12> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<125> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<117> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<109> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<71> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<63> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<55> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<47> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<39> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<101> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<3> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<5> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<6> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<11> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<13> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<14> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<16> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<21> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<22> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<24> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<30> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<127> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<32> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<38> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<40> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<46> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<49> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<54> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<57> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<62> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<99> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<70> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<81> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<73> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<65> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<111> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<103> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<100> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<119> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <FATTORE2/U0/I_VIO/reset_f_edge/iDOUT<1>> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <FATTORE1/U0/I_VIO/reset_f_edge/iDOUT<1>> is incomplete. The signal does not
+   drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 140 block(s) removed
+  28 block(s) optimized away
+ 126 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "FATTORE1/U0/I_VIO/reset_f_edge/I_H2L.U_DOUT" (SFF) removed.
+Loadless block "FATTORE2/U0/I_VIO/reset_f_edge/I_H2L.U_DOUT" (SFF) removed.
+Loadless block
+"your_instance_name/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[10].U_LUT" (ROM)
+removed.
+Loadless block
+"your_instance_name/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+Loadless block
+"your_instance_name/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+Loadless block
+"your_instance_name/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+Loadless block
+"your_instance_name/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+Loadless block "your_instance_name/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[3].U_LUT"
+(ROM) removed.
+Loadless block "your_instance_name/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[4].U_LUT"
+(ROM) removed.
+Loadless block "your_instance_name/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[5].U_LUT"
+(ROM) removed.
+Loadless block "your_instance_name/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[6].U_LUT"
+(ROM) removed.
+Loadless block "your_instance_name/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[7].U_LUT"
+(ROM) removed.
+Loadless block "your_instance_name/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[8].U_LUT"
+(ROM) removed.
+Loadless block "your_instance_name/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[9].U_LUT"
+(ROM) removed.
+The signal "control0<10>" is sourceless and has been removed.
+ Sourceless block "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>152" (ROM) removed.
+  The signal "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>152" is sourceless and has
+been removed.
+   Sourceless block "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>179" (ROM) removed.
+    The signal "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>179" is sourceless and has
+been removed.
+The signal "control0<11>" is sourceless and has been removed.
+The signal "control0<12>" is sourceless and has been removed.
+The signal "control0<13>" is sourceless and has been removed.
+The signal "control0<14>" is sourceless and has been removed.
+ Sourceless block "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>128" (ROM) removed.
+  The signal "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>128" is sourceless and has
+been removed.
+The signal "control0<15>" is sourceless and has been removed.
+The signal "control0<16>" is sourceless and has been removed.
+The signal "control0<17>" is sourceless and has been removed.
+The signal "control0<18>" is sourceless and has been removed.
+ Sourceless block "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>115" (ROM) removed.
+  The signal "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>115" is sourceless and has
+been removed.
+The signal "control0<19>" is sourceless and has been removed.
+The signal "control0<20>" is sourceless and has been removed.
+The signal "control0<21>" is sourceless and has been removed.
+The signal "control0<22>" is sourceless and has been removed.
+ Sourceless block "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>77" (ROM) removed.
+  The signal "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>77" is sourceless and has
+been removed.
+   Sourceless block "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>91_SW0" (ROM) removed.
+    The signal "FATTORE1/N36" is sourceless and has been removed.
+The signal "control0<23>" is sourceless and has been removed.
+The signal "control0<24>" is sourceless and has been removed.
+The signal "control0<25>" is sourceless and has been removed.
+The signal "control0<26>" is sourceless and has been removed.
+ Sourceless block "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>64" (ROM) removed.
+  The signal "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>64" is sourceless and has
+been removed.
+The signal "control0<27>" is sourceless and has been removed.
+The signal "control0<28>" is sourceless and has been removed.
+The signal "control0<29>" is sourceless and has been removed.
+The signal "control0<30>" is sourceless and has been removed.
+ Sourceless block "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>37" (ROM) removed.
+  The signal "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>37" is sourceless and has
+been removed.
+The signal "control0<31>" is sourceless and has been removed.
+The signal "control0<32>" is sourceless and has been removed.
+The signal "control0<33>" is sourceless and has been removed.
+The signal "control0<34>" is sourceless and has been removed.
+The signal "control0<35>" is sourceless and has been removed.
+The signal "control0<8>" is sourceless and has been removed.
+ Sourceless block "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>165" (ROM) removed.
+  The signal "FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>165" is sourceless and has
+been removed.
+The signal "control0<9>" is sourceless and has been removed.
+The signal "control1<10>" is sourceless and has been removed.
+ Sourceless block "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>152" (ROM) removed.
+  The signal "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>152" is sourceless and has
+been removed.
+   Sourceless block "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>179" (ROM) removed.
+    The signal "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>179" is sourceless and has
+been removed.
+The signal "control1<11>" is sourceless and has been removed.
+The signal "control1<12>" is sourceless and has been removed.
+The signal "control1<13>" is sourceless and has been removed.
+The signal "control1<14>" is sourceless and has been removed.
+ Sourceless block "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>128" (ROM) removed.
+  The signal "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>128" is sourceless and has
+been removed.
+The signal "control1<15>" is sourceless and has been removed.
+The signal "control1<16>" is sourceless and has been removed.
+The signal "control1<17>" is sourceless and has been removed.
+The signal "control1<18>" is sourceless and has been removed.
+ Sourceless block "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>115" (ROM) removed.
+  The signal "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>115" is sourceless and has
+been removed.
+The signal "control1<19>" is sourceless and has been removed.
+The signal "control1<20>" is sourceless and has been removed.
+The signal "control1<21>" is sourceless and has been removed.
+The signal "control1<22>" is sourceless and has been removed.
+ Sourceless block "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>77" (ROM) removed.
+  The signal "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>77" is sourceless and has
+been removed.
+   Sourceless block "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>91_SW0" (ROM) removed.
+    The signal "FATTORE2/N36" is sourceless and has been removed.
+The signal "control1<23>" is sourceless and has been removed.
+The signal "control1<24>" is sourceless and has been removed.
+The signal "control1<25>" is sourceless and has been removed.
+The signal "control1<26>" is sourceless and has been removed.
+ Sourceless block "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>64" (ROM) removed.
+  The signal "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>64" is sourceless and has
+been removed.
+The signal "control1<27>" is sourceless and has been removed.
+The signal "control1<28>" is sourceless and has been removed.
+The signal "control1<29>" is sourceless and has been removed.
+The signal "control1<30>" is sourceless and has been removed.
+ Sourceless block "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>37" (ROM) removed.
+  The signal "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>37" is sourceless and has
+been removed.
+The signal "control1<31>" is sourceless and has been removed.
+The signal "control1<32>" is sourceless and has been removed.
+The signal "control1<33>" is sourceless and has been removed.
+The signal "control1<34>" is sourceless and has been removed.
+The signal "control1<35>" is sourceless and has been removed.
+The signal "control1<8>" is sourceless and has been removed.
+ Sourceless block "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>165" (ROM) removed.
+  The signal "FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>165" is sourceless and has
+been removed.
+The signal "control1<9>" is sourceless and has been removed.
+The signal "control2<10>" is sourceless and has been removed.
+ Sourceless block "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>152" (ROM) removed.
+  The signal "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>152" is sourceless and has
+been removed.
+   Sourceless block "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>179" (ROM) removed.
+    The signal "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>179" is sourceless and has
+been removed.
+The signal "control2<11>" is sourceless and has been removed.
+The signal "control2<12>" is sourceless and has been removed.
+The signal "control2<13>" is sourceless and has been removed.
+The signal "control2<14>" is sourceless and has been removed.
+ Sourceless block "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>128" (ROM) removed.
+  The signal "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>128" is sourceless and has
+been removed.
+The signal "control2<15>" is sourceless and has been removed.
+The signal "control2<16>" is sourceless and has been removed.
+The signal "control2<17>" is sourceless and has been removed.
+The signal "control2<18>" is sourceless and has been removed.
+ Sourceless block "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>115" (ROM) removed.
+  The signal "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>115" is sourceless and has
+been removed.
+The signal "control2<19>" is sourceless and has been removed.
+The signal "control2<20>" is sourceless and has been removed.
+The signal "control2<21>" is sourceless and has been removed.
+The signal "control2<22>" is sourceless and has been removed.
+ Sourceless block "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>77" (ROM) removed.
+  The signal "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>77" is sourceless and has
+been removed.
+   Sourceless block "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>91_SW0" (ROM) removed.
+    The signal "PRODOTTO/N36" is sourceless and has been removed.
+The signal "control2<23>" is sourceless and has been removed.
+The signal "control2<24>" is sourceless and has been removed.
+The signal "control2<25>" is sourceless and has been removed.
+The signal "control2<26>" is sourceless and has been removed.
+ Sourceless block "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>64" (ROM) removed.
+  The signal "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>64" is sourceless and has
+been removed.
+The signal "control2<27>" is sourceless and has been removed.
+The signal "control2<28>" is sourceless and has been removed.
+The signal "control2<29>" is sourceless and has been removed.
+The signal "control2<30>" is sourceless and has been removed.
+ Sourceless block "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>37" (ROM) removed.
+  The signal "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>37" is sourceless and has
+been removed.
+The signal "control2<31>" is sourceless and has been removed.
+The signal "control2<32>" is sourceless and has been removed.
+The signal "control2<33>" is sourceless and has been removed.
+The signal "control2<34>" is sourceless and has been removed.
+The signal "control2<35>" is sourceless and has been removed.
+The signal "control2<5>" is sourceless and has been removed.
+The signal "control2<6>" is sourceless and has been removed.
+ Sourceless block "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>165" (ROM) removed.
+  The signal "PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>165" is sourceless and has
+been removed.
+The signal "control2<8>" is sourceless and has been removed.
+The signal "control2<9>" is sourceless and has been removed.
+The signal "your_instance_name/U0/U_ICON/U_CTRL_OUT/iCOMMAND_GRP_SEL<1>" is
+sourceless and has been removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[1].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[2].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[4].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[0].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[1].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[2].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[3].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[4].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[5].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[6].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[7].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[8].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[9].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[10].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[11].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[12].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[13].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[14].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[15].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[0].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[1].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[2].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[3].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[4].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[5].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[6].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[7].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[8].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[9].U_HCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[10].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[11].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[12].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[13].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[14].U_HCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[15].U_HCE" (ROM)
+removed.
+The signal "your_instance_name/U0/U_ICON/iCOMMAND_SEL<4>" is sourceless and has
+been removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[4].U_LCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[4].U_LCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[4].U_LCE" (ROM) removed.
+The signal "your_instance_name/U0/U_ICON/iCOMMAND_SEL<5>" is sourceless and has
+been removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_LCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[5].U_LCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[5].U_LCE" (ROM) removed.
+The signal "your_instance_name/U0/U_ICON/iCOMMAND_SEL<6>" is sourceless and has
+been removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_LCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[6].U_LCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[6].U_LCE" (ROM) removed.
+The signal "your_instance_name/U0/U_ICON/iCOMMAND_SEL<7>" is sourceless and has
+been removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_LCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[7].U_LCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[7].U_LCE" (ROM) removed.
+The signal "your_instance_name/U0/U_ICON/iCOMMAND_SEL<8>" is sourceless and has
+been removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_LCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[8].U_LCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[8].U_LCE" (ROM) removed.
+The signal "your_instance_name/U0/U_ICON/iCOMMAND_SEL<9>" is sourceless and has
+been removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[9].U_LCE" (ROM) removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[9].U_LCE" (ROM) removed.
+The signal "your_instance_name/U0/U_ICON/iCOMMAND_SEL<10>" is sourceless and has
+been removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_LCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[10].U_LCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[10].U_LCE" (ROM)
+removed.
+The signal "your_instance_name/U0/U_ICON/iCOMMAND_SEL<11>" is sourceless and has
+been removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_LCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[11].U_LCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[11].U_LCE" (ROM)
+removed.
+The signal "your_instance_name/U0/U_ICON/iCOMMAND_SEL<12>" is sourceless and has
+been removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_LCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[12].U_LCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[12].U_LCE" (ROM)
+removed.
+The signal "your_instance_name/U0/U_ICON/iCOMMAND_SEL<13>" is sourceless and has
+been removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_LCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[13].U_LCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[13].U_LCE" (ROM)
+removed.
+The signal "your_instance_name/U0/U_ICON/iCOMMAND_SEL<14>" is sourceless and has
+been removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_LCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[14].U_LCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[14].U_LCE" (ROM)
+removed.
+The signal "your_instance_name/U0/U_ICON/iCOMMAND_SEL<15>" is sourceless and has
+been removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_LCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[15].U_LCE" (ROM)
+removed.
+ Sourceless block
+"your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[15].U_LCE" (ROM)
+removed.
+Unused block "your_instance_name/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[10].U_LUT"
+(ROM) removed.
+Unused block "your_instance_name/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[11].U_LUT"
+(ROM) removed.
+Unused block "your_instance_name/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[12].U_LUT"
+(ROM) removed.
+Unused block "your_instance_name/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[13].U_LUT"
+(ROM) removed.
+Unused block "your_instance_name/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[14].U_LUT"
+(ROM) removed.
+Unused block "your_instance_name/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[15].U_LUT"
+(ROM) removed.
+Unused block "your_instance_name/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[4].U_LUT"
+(ROM) removed.
+Unused block "your_instance_name/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[5].U_LUT"
+(ROM) removed.
+Unused block "your_instance_name/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[6].U_LUT"
+(ROM) removed.
+Unused block "your_instance_name/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[7].U_LUT"
+(ROM) removed.
+Unused block "your_instance_name/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[8].U_LUT"
+(ROM) removed.
+Unused block "your_instance_name/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[9].U_LUT"
+(ROM) removed.
+Unused block "your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[1].U_LCE"
+(ROM) removed.
+Unused block "your_instance_name/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[2].U_LCE"
+(ROM) removed.
+Unused block "your_instance_name/U0/U_ICON/U_CTRL_OUT/U_CMDGRP1" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+FDE 		FATTORE1/U0/I_VIO/U_DATA_OUT
+   optimized to 0
+LUT4 		FATTORE1/U0/I_VIO/U_STATUS/F_STAT[4].I_STAT.U_STAT
+   optimized to 0
+LUT4 		FATTORE1/U0/I_VIO/U_STATUS/F_STAT[5].I_STAT.U_STAT
+   optimized to 0
+LUT4 		FATTORE1/U0/I_VIO/U_STATUS/F_STAT[7].I_STAT.U_STAT
+   optimized to 0
+LUT3 		FATTORE1/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O_8
+   optimized to 0
+LUT4 		FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>12
+   optimized to 1
+LUT4 		FATTORE1/U0/I_VIO/U_STATUS/iSTAT_CNT<7>91
+   optimized to 1
+GND 		FATTORE1/XST_GND
+VCC 		FATTORE1/XST_VCC
+FDE 		FATTORE2/U0/I_VIO/U_DATA_OUT
+   optimized to 0
+LUT4 		FATTORE2/U0/I_VIO/U_STATUS/F_STAT[4].I_STAT.U_STAT
+   optimized to 0
+LUT4 		FATTORE2/U0/I_VIO/U_STATUS/F_STAT[5].I_STAT.U_STAT
+   optimized to 0
+LUT4 		FATTORE2/U0/I_VIO/U_STATUS/F_STAT[7].I_STAT.U_STAT
+   optimized to 0
+LUT3 		FATTORE2/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O_8
+   optimized to 0
+LUT4 		FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>12
+   optimized to 1
+LUT4 		FATTORE2/U0/I_VIO/U_STATUS/iSTAT_CNT<7>91
+   optimized to 1
+GND 		FATTORE2/XST_GND
+VCC 		FATTORE2/XST_VCC
+LUT4 		PRODOTTO/U0/I_VIO/U_STATUS/F_STAT[5].I_STAT.U_STAT
+   optimized to 0
+LUT4 		PRODOTTO/U0/I_VIO/U_STATUS/F_STAT[6].I_STAT.U_STAT
+   optimized to 0
+LUT4 		PRODOTTO/U0/I_VIO/U_STATUS/F_STAT[7].I_STAT.U_STAT
+   optimized to 0
+LUT3 		PRODOTTO/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O_7
+   optimized to 0
+LUT4 		PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>12
+   optimized to 1
+LUT4 		PRODOTTO/U0/I_VIO/U_STATUS/iSTAT_CNT<7>91
+   optimized to 1
+GND 		PRODOTTO/XST_GND
+VCC 		PRODOTTO/XST_VCC
+GND 		your_instance_name/XST_GND
+VCC 		your_instance_name/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

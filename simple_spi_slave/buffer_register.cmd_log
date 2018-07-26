@@ -1,0 +1,2 @@
+vhdtdtfi -prj simple_spi_slave -o /home/ssaa/Dropbox/Universita/magistrale/ASE/progettiISE/simple_spi_slave/buffer_register.vhi -module buffer_register -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work buffer_register.vhd 
+vhdtdtfi -prj simple_spi_slave -o /home/ssaa/Dropbox/Universita/magistrale/ASE/progettiISE/simple_spi_slave/buffer_register.vhi -module buffer_register -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work buffer_register.vhd 

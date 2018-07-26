@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ssaa/Dropbox/Universita/magistrale/ASE/progettiISE/adder_subtractor/tb_esaustivo_isim_beh.exe" -prj "/home/ssaa/Dropbox/Universita/magistrale/ASE/progettiISE/adder_subtractor/tb_esaustivo_beh.prj" "work.tb_esaustivo" 

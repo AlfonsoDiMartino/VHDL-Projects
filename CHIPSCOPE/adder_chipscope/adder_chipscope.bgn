@@ -1,0 +1,488 @@
+Release 14.7 - Bitgen P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Loading device for application Rf_Device from file '3s1200e.nph' in environment
+/opt/Xilinx/14.7/ISE_DS/ISE/.
+   "adder_chipscope" is an NCD, version 3.2, device xc3s1200e, package fg320,
+speed -4
+Opened constraints file adder_chipscope.pcf.
+
+Tue Jan  5 10:56:04 2016
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:No -g DriveDone:No adder_chipscope.ncd 
+
+Summary of Bitgen Options:
++----------------------+----------------------+
+| Option Name          | Current Setting      |
++----------------------+----------------------+
+| Compress             | (Not Specified)*     |
++----------------------+----------------------+
+| Readback             | (Not Specified)*     |
++----------------------+----------------------+
+| CRC                  | Enable**             |
++----------------------+----------------------+
+| DebugBitstream       | No**                 |
++----------------------+----------------------+
+| ConfigRate           | 1**                  |
++----------------------+----------------------+
+| StartupClk           | Cclk**               |
++----------------------+----------------------+
+| DCMShutdown          | Disable**            |
++----------------------+----------------------+
+| DonePin              | Pullup**             |
++----------------------+----------------------+
+| ProgPin              | Pullup**             |
++----------------------+----------------------+
+| TckPin               | Pullup**             |
++----------------------+----------------------+
+| TdiPin               | Pullup**             |
++----------------------+----------------------+
+| TdoPin               | Pullup**             |
++----------------------+----------------------+
+| TmsPin               | Pullup**             |
++----------------------+----------------------+
+| UnusedPin            | Pulldown**           |
++----------------------+----------------------+
+| GWE_cycle            | 6**                  |
++----------------------+----------------------+
+| GTS_cycle            | 5**                  |
++----------------------+----------------------+
+| LCK_cycle            | NoWait**             |
++----------------------+----------------------+
+| DONE_cycle           | 4**                  |
++----------------------+----------------------+
+| Persist              | No*                  |
++----------------------+----------------------+
+| DriveDone            | No**                 |
++----------------------+----------------------+
+| DonePipe             | No**                 |
++----------------------+----------------------+
+| Security             | None**               |
++----------------------+----------------------+
+| UserID               | 0xFFFFFFFF**         |
++----------------------+----------------------+
+| MultiBootMode        | No*                  |
++----------------------+----------------------+
+| ActivateGclk         | No*                  |
++----------------------+----------------------+
+| ActiveReconfig       | No*                  |
++----------------------+----------------------+
+| PartialMask0         | (Not Specified)*     |
++----------------------+----------------------+
+| PartialMask1         | (Not Specified)*     |
++----------------------+----------------------+
+| PartialMask2         | (Not Specified)*     |
++----------------------+----------------------+
+| PartialGclk          | (Not Specified)*     |
++----------------------+----------------------+
+| PartialLeft          | (Not Specified)*     |
++----------------------+----------------------+
+| PartialRight         | (Not Specified)*     |
++----------------------+----------------------+
+| TimeStamp            | Default*             |
++----------------------+----------------------+
+| IEEE1532             | No*                  |
++----------------------+----------------------+
+| Binary               | No**                 |
++----------------------+----------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+There were 0 CONFIG constraint(s) processed from adder_chipscope.pcf.
+
+
+Running DRC.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<9> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<7> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<5> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<3> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<11> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<79> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<78> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<77> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<87> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<86> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<85> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<25> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<21> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<19> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<111> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<49> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<41> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<37> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<29> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<127> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<126> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<125> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<112> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<88> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<80> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<72> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<68> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<64> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<56> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<52> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<44> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<34> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<26> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<22> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<90> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<82> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<74> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<66> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<4> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<117> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<97> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<89> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<40> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<16> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<91> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<83> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<75> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<67> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<70> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<38> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<118> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<98> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<17> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<12> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<120> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<92> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<84> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<76> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<71> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<39> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<119> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<1> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<50> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<42> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<121> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<113> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<93> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<69> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<48> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<51> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<43> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<27> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<122> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<114> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<94> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<81> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<73> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<65> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<36> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<124> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<116> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<96> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<23> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<10> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<123> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<115> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<95> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<62> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<54> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<46> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<58> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<100> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<32> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<24> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<104> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<6> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<59> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<110> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<102> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<33> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<105> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<31> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<15> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<18> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<106> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<8> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<35> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<107> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<2> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<108> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<60> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<28> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<61> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<53> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<45> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<20> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<109> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<63> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<55> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<47> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<101> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<99> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<30> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<14> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<57> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<103> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <VIO_ADD_1_INST/U0/I_VIO/reset_f_edge/iDOUT<1>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <VIO_ADD_2_INST/U0/I_VIO/reset_f_edge/iDOUT<1>> is incomplete. The signal
+   does not drive any load pins in the design.
+DRC detected 0 errors and 130 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
+Creating bit map...
+Saving bit stream in "adder_chipscope.bit".
+Bitstream generation is complete.

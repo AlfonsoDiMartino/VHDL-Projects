@@ -1,0 +1,6 @@
+vhdl work "ipcore_dir/vio_addend.vhd"
+vhdl work "ipcore_dir/vio_sum.vhd"
+vhdl work "ipcore_dir/i_con.vhd"
+vhdl work "full_adder.vhd"
+vhdl work "ripple_carry_adder.vhd"
+vhdl work "rca_chipscope.vhd"

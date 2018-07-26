@@ -1,0 +1,1 @@
+vhdtdtfi -prj JK_with_gate -o Z:/Scrivania/PROGETTI_ISE/JK_with_gate/myNOR3.vhi -module myNOR3 -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work myNor3.vhd 

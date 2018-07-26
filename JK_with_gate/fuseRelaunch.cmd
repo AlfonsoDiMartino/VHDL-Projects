@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/tb_ffJK_MS_isim_beh.exe" -prj "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/tb_ffJK_MS_beh.prj" "work.tb_ffJK_MS" 

@@ -1,0 +1,43 @@
+V3 22
+FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffJK.vhd" 2016/01/14.01:44:15 P.20131013
+EN work/ffJK 1453288863 \
+      FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffJK.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/ffJK/Structural 1453288864 \
+      FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffJK.vhd" \
+      EN work/ffJK 1453288863 CP myAND CP RS_Clocked_Preset
+FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffJK_MS.vhd" 2016/01/16.18:37:45 P.20131013
+EN work/ffJK_MS 1453137024 \
+      FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffJK_MS.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/ffJK_MS/Behavioral 1453137025 \
+      FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffJK_MS.vhd" \
+      EN work/ffJK_MS 1453137024 CP ffJK
+FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffT.vhd" 2016/01/14.01:52:03 P.20131013
+EN work/ffT 1453288865 \
+      FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffT.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/ffT/Structural 1453288866 \
+      FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffT.vhd" \
+      EN work/ffT 1453288865 CP ffJK
+FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/myAND.vhd" 2016/01/13.23:21:37 P.20131013
+EN work/myAND 1453288859 \
+      FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/myAND.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/myAND/dataflow 1453288860 \
+      FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/myAND.vhd" \
+      EN work/myAND 1453288859
+FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/myNor3.vhd" 2016/01/11.17:44:27 P.20131013
+EN work/myNOR3 1453288857 \
+      FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/myNor3.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/myNOR3/dataflow 1453288858 \
+      FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/myNor3.vhd" \
+      EN work/myNOR3 1453288857
+FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/RS_Clocked_Preset.vhd" 2016/01/14.01:44:26 P.20131013
+EN work/RS_Clocked_Preset 1453288861 \
+      FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/RS_Clocked_Preset.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/RS_Clocked_Preset/Structural 1453288862 \
+      FL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/RS_Clocked_Preset.vhd" \
+      EN work/RS_Clocked_Preset 1453288861 CP myNOR3 CP myAND

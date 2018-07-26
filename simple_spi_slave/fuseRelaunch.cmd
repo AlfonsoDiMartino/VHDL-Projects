@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ssaa/Dropbox/Universita/magistrale/ASE/progettiISE/simple_spi_slave/tb_spi_slave_isim_beh.exe" -prj "/home/ssaa/Dropbox/Universita/magistrale/ASE/progettiISE/simple_spi_slave/tb_spi_slave_beh.prj" "work.tb_spi_slave" 

@@ -1,0 +1,4 @@
+## Leds
+NET "carry_out"      LOC = "J14";     # Bank = 1, Pin name = IO_L14N_1/A3/RHCLK7, Type = RHCLK/DUAL,        Sch name = JD10/LD0
+## Switches
+NET "carry_in"       LOC = "G18";     # Bank = 1, Pin name = IP, Type = INPUT,                              Sch name = SW0

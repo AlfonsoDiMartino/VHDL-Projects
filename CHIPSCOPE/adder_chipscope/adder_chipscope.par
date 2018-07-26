@@ -1,0 +1,731 @@
+Release 14.7 par P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+pietro-S551LN::  Tue Jan 05 10:55:06 2016
+
+par -w -intstyle ise -ol high -t 1 adder_chipscope_map.ncd adder_chipscope.ncd
+adder_chipscope.pcf 
+
+
+Constraints file: adder_chipscope.pcf.
+Loading device for application Rf_Device from file '3s1200e.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
+   "adder_chipscope" is an NCD, version 3.2, device xc3s1200e, package fg320, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.27 2013-10-13".
+
+
+Design Summary Report:
+
+ Number of External IOBs                           2 out of 250     1%
+
+   Number of External Input IOBs                  1
+
+      Number of External Input IBUFs              1
+        Number of LOCed External Input IBUFs      1 out of 1     100%
+
+
+   Number of External Output IOBs                 1
+
+      Number of External Output IOBs              1
+        Number of LOCed External Output IOBs      1 out of 1     100%
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BSCANs                          1 out of 1     100%
+   Number of BUFGMUXs                        1 out of 24      4%
+   Number of Slices                       1753 out of 8672   20%
+      Number of SLICEMs                      0 out of 4336    0%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 1 secs 
+Finished initial Timing Analysis.  REAL time: 1 secs 
+
+WARNING:Par:288 - The signal VIO_ADD_1_INST/U0/I_VIO/reset_f_edge/iDOUT<1> has no load.  PAR will not attempt to route
+   this signal.
+WARNING:Par:288 - The signal VIO_ADD_2_INST/U0/I_VIO/reset_f_edge/iDOUT<1> has no load.  PAR will not attempt to route
+   this signal.
+
+Starting Placer
+Total REAL time at the beginning of Placer: 1 secs 
+Total CPU  time at the beginning of Placer: 1 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:56a5d7db) REAL time: 2 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:56a5d7db) REAL time: 2 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:9cbf0ee9) REAL time: 2 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:ed2e2fd1) REAL time: 2 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:ed2e2fd1) REAL time: 2 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:ed2e2fd1) REAL time: 2 secs 
+
+Phase 7.8  Global Placement
+...........................................................................................................................
+............................................................................................................................
+..........................................................
+.....................................................................................................................
+...................................................................................
+Phase 7.8  Global Placement (Checksum:98016c1) REAL time: 7 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:98016c1) REAL time: 7 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:72aaa6d0) REAL time: 9 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:72aaa6d0) REAL time: 9 secs 
+
+Total REAL time to Placer completion: 9 secs 
+Total CPU  time to Placer completion: 9 secs 
+Writing design to file adder_chipscope.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 7394 unrouted;      REAL time: 14 secs 
+
+Phase  2  : 5782 unrouted;      REAL time: 16 secs 
+
+Phase  3  : 923 unrouted;      REAL time: 17 secs 
+
+Phase  4  : 1056 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+
+Updating file: adder_chipscope.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 20 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 45 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 48 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 48 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 48 secs 
+
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 49 secs 
+
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 49 secs 
+WARNING:Route:455 - CLK Net:virtual_in_sum<2> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<1> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<3> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<8> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<9> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<5> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<7> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<6> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<4> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<33> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<31> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<18> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<30> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<24> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<15> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<14> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<28> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<10> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<32> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<20> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<21> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<45> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<11> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<35> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<69> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<68> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<64> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<19> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<12> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<16> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<29> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<25> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<63> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<34> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<42> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<81> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<13> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<17> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<46> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<65> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<41> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<47> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<83> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<82> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<52> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<67> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<107> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<80> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<61> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<59> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<86> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<70> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<57> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<87> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<66> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<58> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<49> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<60> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<48> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<39> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<62> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<56> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<88> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<38> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<23> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<89> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<108> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<37> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<99> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<84> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<112> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<43> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<111> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<109> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<100> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<75> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<79> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<74> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<40> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<110> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<85> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<22> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<51> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<98> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<124> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<116> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<93> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<106> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<117> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<73> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<96> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<103> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<105> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<53> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<121> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<54> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<104> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<120> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<97> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<102> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<126> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<122> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<44> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<119> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<113> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<115> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<114> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<50> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<36> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<92> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<101> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<91> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<94> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<125> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<127> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<55> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<123> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<118> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<90> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<77> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<26> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<78> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<95> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<71> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<72> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<27> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:virtual_in_sum<76> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 49 secs 
+Total CPU time to Router completion: 49 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|    CONTROL_ADD_1<0> | BUFGMUX_X1Y10| No   | 1126 |  0.206     |  0.375      |
++---------------------+--------------+------+------+------------+-------------+
+|I_CON_INST/U0/iUPDAT |              |      |      |            |             |
+|               E_OUT |         Local|      |    1 |  0.000     |  1.782      |
++---------------------+--------------+------+------+------------+-------------+
+|   virtual_in_sum<9> |         Local|      |    3 |  0.004     |  2.405      |
++---------------------+--------------+------+------+------------+-------------+
+|   virtual_in_sum<7> |         Local|      |    3 |  0.011     |  0.679      |
++---------------------+--------------+------+------+------------+-------------+
+|   virtual_in_sum<5> |         Local|      |    3 |  0.010     |  1.868      |
++---------------------+--------------+------+------+------------+-------------+
+|   virtual_in_sum<3> |         Local|      |    3 |  0.003     |  1.940      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<11> |         Local|      |    3 |  0.011     |  1.995      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<79> |         Local|      |    3 |  0.248     |  2.617      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<78> |         Local|      |    3 |  0.917     |  2.717      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<77> |         Local|      |    3 |  0.257     |  2.696      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<87> |         Local|      |    3 |  0.000     |  1.243      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<86> |         Local|      |    3 |  0.009     |  1.861      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<85> |         Local|      |    3 |  0.499     |  2.407      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<25> |         Local|      |    3 |  0.002     |  1.426      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<21> |         Local|      |    3 |  0.000     |  1.428      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<19> |         Local|      |    3 |  0.014     |  1.196      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<111> |         Local|      |    3 |  0.086     |  1.513      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<49> |         Local|      |    3 |  0.965     |  2.316      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<41> |         Local|      |    3 |  0.010     |  1.469      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<37> |         Local|      |    3 |  0.008     |  1.827      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<29> |         Local|      |    3 |  0.025     |  1.438      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<127> |         Local|      |    3 |  0.344     |  2.254      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<126> |         Local|      |    3 |  0.156     |  2.288      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<125> |         Local|      |    3 |  0.000     |  2.125      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<112> |         Local|      |    3 |  0.879     |  2.755      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<88> |         Local|      |    3 |  0.041     |  1.905      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<80> |         Local|      |    3 |  0.011     |  1.188      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<72> |         Local|      |    3 |  0.012     |  2.332      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<68> |         Local|      |    3 |  0.008     |  2.556      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<64> |         Local|      |    3 |  0.507     |  2.979      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<56> |         Local|      |    3 |  0.002     |  1.869      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<52> |         Local|      |    3 |  0.037     |  1.974      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<44> |         Local|      |    3 |  0.026     |  1.866      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<34> |         Local|      |    3 |  0.075     |  1.848      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<26> |         Local|      |    3 |  0.000     |  1.824      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<22> |         Local|      |    3 |  0.000     |  1.912      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<90> |         Local|      |    3 |  0.000     |  1.241      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<82> |         Local|      |    3 |  0.248     |  1.477      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<74> |         Local|      |    3 |  0.134     |  2.019      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<66> |         Local|      |    3 |  0.000     |  2.188      |
++---------------------+--------------+------+------+------------+-------------+
+|   virtual_in_sum<4> |         Local|      |    3 |  0.163     |  1.988      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<117> |         Local|      |    3 |  0.000     |  1.828      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<97> |         Local|      |    3 |  0.257     |  1.459      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<89> |         Local|      |    3 |  0.003     |  1.521      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<40> |         Local|      |    3 |  0.000     |  1.784      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<16> |         Local|      |    3 |  0.000     |  1.865      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<91> |         Local|      |    3 |  0.024     |  1.514      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<83> |         Local|      |    3 |  0.000     |  1.824      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<75> |         Local|      |    3 |  0.004     |  1.853      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<67> |         Local|      |    3 |  0.010     |  1.950      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<70> |         Local|      |    3 |  0.173     |  2.310      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<38> |         Local|      |    3 |  0.021     |  1.473      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<118> |         Local|      |    3 |  0.002     |  2.029      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<98> |         Local|      |    3 |  0.000     |  0.703      |
++---------------------+--------------+------+------+------------+-------------+
+|   virtual_in_sum<0> |         Local|      |    2 |  0.000     |  1.180      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<17> |         Local|      |    3 |  0.007     |  1.838      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<12> |         Local|      |    3 |  0.000     |  1.964      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<120> |         Local|      |    3 |  0.696     |  2.671      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<92> |         Local|      |    3 |  0.298     |  1.536      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<84> |         Local|      |    3 |  0.002     |  1.900      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<76> |         Local|      |    3 |  0.000     |  2.195      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<71> |         Local|      |    3 |  0.145     |  2.205      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<39> |         Local|      |    3 |  0.012     |  1.462      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<119> |         Local|      |    3 |  0.007     |  2.187      |
++---------------------+--------------+------+------+------------+-------------+
+|   virtual_in_sum<1> |         Local|      |    3 |  0.011     |  1.963      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<50> |         Local|      |    3 |  0.000     |  1.939      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<42> |         Local|      |    3 |  0.058     |  1.812      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<13> |         Local|      |    3 |  0.019     |  2.237      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<121> |         Local|      |    3 |  0.096     |  2.359      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<113> |         Local|      |    3 |  0.348     |  2.211      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<93> |         Local|      |    3 |  0.013     |  1.507      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<69> |         Local|      |    3 |  0.503     |  2.265      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<48> |         Local|      |    3 |  0.000     |  2.495      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<51> |         Local|      |    3 |  0.000     |  2.530      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<43> |         Local|      |    3 |  0.000     |  1.809      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<27> |         Local|      |    3 |  0.003     |  1.881      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<122> |         Local|      |    3 |  1.338     |  4.027      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<114> |         Local|      |    3 |  0.202     |  2.034      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<94> |         Local|      |    3 |  0.047     |  1.767      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<81> |         Local|      |    3 |  0.011     |  1.462      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<73> |         Local|      |    3 |  0.008     |  1.894      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<65> |         Local|      |    3 |  0.849     |  2.746      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<36> |         Local|      |    3 |  0.005     |  1.832      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<124> |         Local|      |    3 |  0.477     |  2.268      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<116> |         Local|      |    3 |  0.000     |  1.897      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<96> |         Local|      |    3 |  0.018     |  1.201      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<23> |         Local|      |    3 |  0.002     |  1.171      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<10> |         Local|      |    3 |  0.048     |  1.992      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<123> |         Local|      |    3 |  0.321     |  2.728      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<115> |         Local|      |    3 |  0.525     |  2.556      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<95> |         Local|      |    3 |  0.479     |  1.162      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<62> |         Local|      |    3 |  0.021     |  1.521      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<54> |         Local|      |    3 |  0.013     |  1.513      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<46> |         Local|      |    3 |  0.000     |  1.528      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<58> |         Local|      |    3 |  0.035     |  1.515      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<100> |         Local|      |    3 |  0.008     |  1.466      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<32> |         Local|      |    3 |  0.001     |  1.531      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<24> |         Local|      |    3 |  0.000     |  0.677      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<104> |         Local|      |    3 |  0.010     |  1.466      |
++---------------------+--------------+------+------+------------+-------------+
+|   virtual_in_sum<6> |         Local|      |    3 |  0.000     |  1.455      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<59> |         Local|      |    3 |  0.247     |  1.110      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<110> |         Local|      |    3 |  0.000     |  1.176      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<102> |         Local|      |    3 |  0.270     |  1.398      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<33> |         Local|      |    3 |  0.057     |  1.561      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<105> |         Local|      |    3 |  0.056     |  1.754      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<31> |         Local|      |    3 |  0.000     |  0.897      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<15> |         Local|      |    3 |  0.010     |  1.478      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<18> |         Local|      |    3 |  0.009     |  1.466      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<106> |         Local|      |    3 |  0.004     |  1.183      |
++---------------------+--------------+------+------+------------+-------------+
+|   virtual_in_sum<8> |         Local|      |    3 |  0.155     |  1.509      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<35> |         Local|      |    3 |  0.002     |  1.879      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<107> |         Local|      |    3 |  0.000     |  1.180      |
++---------------------+--------------+------+------+------------+-------------+
+|   virtual_in_sum<2> |         Local|      |    3 |  0.000     |  1.557      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<108> |         Local|      |    3 |  0.000     |  1.466      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<60> |         Local|      |    3 |  0.100     |  2.179      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<28> |         Local|      |    3 |  0.312     |  0.891      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<61> |         Local|      |    3 |  0.062     |  2.186      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<53> |         Local|      |    3 |  0.091     |  1.636      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<45> |         Local|      |    3 |  0.002     |  1.738      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<20> |         Local|      |    3 |  0.033     |  1.476      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<109> |         Local|      |    3 |  0.010     |  1.448      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<63> |         Local|      |    3 |  0.007     |  2.088      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<55> |         Local|      |    3 |  0.000     |  1.516      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<47> |         Local|      |    3 |  0.003     |  1.526      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<101> |         Local|      |    3 |  0.032     |  1.757      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<99> |         Local|      |    3 |  0.027     |  1.734      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<30> |         Local|      |    3 |  0.021     |  1.725      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<14> |         Local|      |    3 |  0.018     |  0.879      |
++---------------------+--------------+------+------+------------+-------------+
+|  virtual_in_sum<57> |         Local|      |    3 |  0.007     |  2.538      |
++---------------------+--------------+------+------+------------+-------------+
+| virtual_in_sum<103> |         Local|      |    3 |  0.009     |  1.442      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net CON | SETUP       |         N/A|    14.054ns|     N/A|           0
+  TROL_ADD_1<0>                             | HOLD        |     0.927ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net I_C | SETUP       |         N/A|     1.474ns|     N/A|           0
+  ON_INST/U0/iUPDATE_OUT                    | HOLD        |     1.025ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 49 secs 
+Total CPU time to PAR completion: 49 secs 
+
+Peak Memory Usage:  610 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 131
+Number of info messages: 1
+
+Writing design to file adder_chipscope.ncd
+
+
+
+PAR done!

@@ -1,0 +1,44 @@
+V3 23
+FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/full_adder.vhd 2015/11/24.14:59:39 P.20131013
+EN work/full_adder 1451987682 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/full_adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/full_adder/Behavioral 1451987683 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/full_adder.vhd \
+      EN work/full_adder 1451987682
+FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/i_con.vhd 2016/01/05.10:42:16 P.20131013
+EN work/i_con 1451987690 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/i_con.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/i_con/i_con_a 1451987691 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/i_con.vhd \
+      EN work/i_con 1451987690
+FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/vio_addend.vhd 2016/01/05.10:38:43 P.20131013
+EN work/vio_addend 1451987686 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/vio_addend.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/vio_addend/vio_addend_a 1451987687 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/vio_addend.vhd \
+      EN work/vio_addend 1451987686
+FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/vio_sum.vhd 2016/01/05.10:40:29 P.20131013
+EN work/vio_sum 1451987688 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/vio_sum.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/vio_sum/vio_sum_a 1451987689 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/vio_sum.vhd \
+      EN work/vio_sum 1451987688
+FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/rca_chipscope.vhd 2016/01/05.10:36:52 P.20131013
+EN work/adder_chipscope 1451987692 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/rca_chipscope.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/adder_chipscope/Behavioral 1451987693 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/rca_chipscope.vhd \
+      EN work/adder_chipscope 1451987692 CP ripple_carry_adder CP vio_addend \
+      CP vio_sum CP i_con
+FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ripple_carry_adder.vhd 2015/11/24.14:34:21 P.20131013
+EN work/ripple_carry_adder 1451987684 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ripple_carry_adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/ripple_carry_adder/structural 1451987685 \
+      FL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ripple_carry_adder.vhd \
+      EN work/ripple_carry_adder 1451987684 CP full_adder

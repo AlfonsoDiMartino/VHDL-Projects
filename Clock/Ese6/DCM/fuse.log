@@ -1,0 +1,43 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/pietro/Scrivania/ISE_PROJECT/DCM/tb_DCM_isim_beh.exe -prj /home/pietro/Scrivania/ISE_PROJECT/DCM/tb_DCM_beh.prj work.tb_DCM 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/pietro/Scrivania/ISE_PROJECT/DCM/DCM_4.vhd" into library work
+Parsing VHDL file "/home/pietro/Scrivania/ISE_PROJECT/DCM/DCM_2.vhd" into library work
+Parsing VHDL file "/home/pietro/Scrivania/ISE_PROJECT/DCM/DCM.vhd" into library work
+Parsing VHDL file "/home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.vhd" into library work
+Parsing VHDL file "/home/pietro/Scrivania/ISE_PROJECT/DCM/tb_DCM.vhd" into library work
+Parsing VHDL file "/home/pietro/Scrivania/ISE_PROJECT/DCM/DCM_3.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 116884 KB
+Fuse CPU Usage: 1300 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package textio
+Compiling package vital_timing
+Compiling package vital_primitives
+Compiling package vpkg
+Compiling architecture bufg_v of entity BUFG [bufg_default]
+Compiling architecture ibufg_v of entity IBUFG [\IBUFG("DONT_CARE","0",true,"DEF...]
+Compiling architecture dcm_sp_clock_divide_by_2_v of entity dcm_sp_clock_divide_by_2 [dcm_sp_clock_divide_by_2_default]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_maximum_period_check_v of entity dcm_sp_maximum_period_check [\dcm_sp_maximum_period_check("*"...]
+Compiling architecture dcm_sp_clock_lost_v of entity dcm_sp_clock_lost [dcm_sp_clock_lost_default]
+Compiling architecture dcm_sp_v of entity DCM_SP [\DCM_SP(true,"*",true,false,4.0,...]
+Compiling architecture behavioral of entity DCM [dcm_default]
+Compiling architecture dcm_sp_v of entity DCM_SP [\DCM_SP(true,"*",true,false,2.0,...]
+Compiling architecture behavioral of entity DCM_2 [dcm_2_default]
+Compiling architecture dcm_sp_v of entity DCM_SP [\DCM_SP(true,"*",true,false,2.0,...]
+Compiling architecture behavioral of entity DCM_4 [dcm_4_default]
+Compiling architecture behavioral of entity top_module [top_module_default]
+Compiling architecture behavior of entity tb_dcm
+Time Resolution for simulation is 1ps.
+Compiled 35 VHDL Units
+Built simulation executable /home/pietro/Scrivania/ISE_PROJECT/DCM/tb_DCM_isim_beh.exe
+Fuse Memory Usage: 703256 KB
+Fuse CPU Usage: 1700 ms
+GCC CPU Usage: 2950 ms

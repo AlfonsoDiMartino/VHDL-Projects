@@ -1,0 +1,1 @@
+vhdtdtfi -prj Chipscope_Multiplier -o /home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/parallel_multiplier_righe.vhi -module parallel_multiplier_righe -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work partial_product_row.vhd -lib work partial_sum_row.vhd -lib work partial_prod_matrix.vhd -lib work parallel_multiplier_righe.vhd 

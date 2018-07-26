@@ -1,0 +1,9 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Jan 05 10:55:03 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "carry_out" LOCATE = SITE "J14" LEVEL 1;
+COMP "carry_in" LOCATE = SITE "G18" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,12 @@
+AR ffjk_ms behavioral "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffJK_MS.vhd" sub00/vhpl09 1453137025
+AR myand dataflow "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/myAND.vhd" sub00/vhpl03 1453288860
+EN myand NULL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/myAND.vhd" sub00/vhpl02 1453288859
+EN fft NULL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffT.vhd" sub00/vhpl10 1453288865
+EN mynor3 NULL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/myNor3.vhd" sub00/vhpl00 1453288857
+EN ffjk NULL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffJK.vhd" sub00/vhpl06 1453288863
+EN ffjk_ms NULL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffJK_MS.vhd" sub00/vhpl08 1453137024
+AR ffjk structural "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffJK.vhd" sub00/vhpl07 1453288864
+EN rs_clocked_preset NULL "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/RS_Clocked_Preset.vhd" sub00/vhpl04 1453288861
+AR rs_clocked_preset structural "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/RS_Clocked_Preset.vhd" sub00/vhpl05 1453288862
+AR mynor3 dataflow "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/myNor3.vhd" sub00/vhpl01 1453288858
+AR fft structural "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffT.vhd" sub00/vhpl11 1453288866

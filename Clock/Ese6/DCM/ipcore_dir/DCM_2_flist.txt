@@ -1,0 +1,2 @@
+# Output products list for <DCM_2>
+DCM_2_flist.txt

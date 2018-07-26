@@ -1,0 +1,30 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/tb_ffJK_MS_isim_beh.exe" -prj "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/tb_ffJK_MS_beh.prj" "work.tb_ffJK_MS" 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/myNor3.vhd" into library work
+Parsing VHDL file "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/myAND.vhd" into library work
+Parsing VHDL file "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/RS_Clocked_Preset.vhd" into library work
+Parsing VHDL file "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffJK.vhd" into library work
+Parsing VHDL file "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffJK_MS.vhd" into library work
+Parsing VHDL file "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/tb_ffJK_MS.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 95192 KB
+Fuse CPU Usage: 1190 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture dataflow of entity myAND [\myAND(10000)\]
+Compiling architecture dataflow of entity myNOR3 [\myNOR3(10000)\]
+Compiling architecture structural of entity RS_Clocked_Preset [\RS_Clocked_Preset(10000)\]
+Compiling architecture structural of entity ffJK [\ffJK(10000,10000)\]
+Compiling architecture behavioral of entity ffJK_MS [\ffJK_MS(10000,10000,10000)\]
+Compiling architecture behavior of entity tb_ffjk_ms
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 13 VHDL Units
+Built simulation executable /home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/tb_ffJK_MS_isim_beh.exe
+Fuse Memory Usage: 660912 KB
+Fuse CPU Usage: 1210 ms
+GCC CPU Usage: 120 ms

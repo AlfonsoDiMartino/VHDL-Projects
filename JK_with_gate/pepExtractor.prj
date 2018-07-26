@@ -1,0 +1,5 @@
+work	"RS_Clocked_Preset.vhd"
+work	"ffJK.vhd"
+work	"ffJK_MS.vhd"
+work	"myAND.vhd"
+work	"myNor3.vhd"

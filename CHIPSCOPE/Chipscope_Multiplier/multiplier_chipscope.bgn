@@ -1,0 +1,488 @@
+Release 14.7 - Bitgen P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Loading device for application Rf_Device from file '3s1200e.nph' in environment
+/opt/Xilinx/14.7/ISE_DS/ISE/.
+   "multiplier_chipscope" is an NCD, version 3.2, device xc3s1200e, package
+fg320, speed -4
+Opened constraints file multiplier_chipscope.pcf.
+
+Mon Jan  4 21:55:04 2016
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -intstyle ise -w -g DebugBitstream:No -g Binary:no -g CRC:Enable -g ConfigRate:1 -g ProgPin:PullUp -g DonePin:PullUp -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g DCMShutdown:Disable -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g LCK_cycle:NoWait -g Security:None -g DonePipe:Yes -g DriveDone:No multiplier_chipscope.ncd 
+
+Summary of Bitgen Options:
++----------------------+----------------------+
+| Option Name          | Current Setting      |
++----------------------+----------------------+
+| Compress             | (Not Specified)*     |
++----------------------+----------------------+
+| Readback             | (Not Specified)*     |
++----------------------+----------------------+
+| CRC                  | Enable**             |
++----------------------+----------------------+
+| DebugBitstream       | No**                 |
++----------------------+----------------------+
+| ConfigRate           | 1**                  |
++----------------------+----------------------+
+| StartupClk           | Cclk**               |
++----------------------+----------------------+
+| DCMShutdown          | Disable**            |
++----------------------+----------------------+
+| DonePin              | Pullup**             |
++----------------------+----------------------+
+| ProgPin              | Pullup**             |
++----------------------+----------------------+
+| TckPin               | Pullup**             |
++----------------------+----------------------+
+| TdiPin               | Pullup**             |
++----------------------+----------------------+
+| TdoPin               | Pullup**             |
++----------------------+----------------------+
+| TmsPin               | Pullup**             |
++----------------------+----------------------+
+| UnusedPin            | Pulldown**           |
++----------------------+----------------------+
+| GWE_cycle            | 6**                  |
++----------------------+----------------------+
+| GTS_cycle            | 5**                  |
++----------------------+----------------------+
+| LCK_cycle            | NoWait**             |
++----------------------+----------------------+
+| DONE_cycle           | 4**                  |
++----------------------+----------------------+
+| Persist              | No*                  |
++----------------------+----------------------+
+| DriveDone            | No**                 |
++----------------------+----------------------+
+| DonePipe             | Yes                  |
++----------------------+----------------------+
+| Security             | None**               |
++----------------------+----------------------+
+| UserID               | 0xFFFFFFFF**         |
++----------------------+----------------------+
+| MultiBootMode        | No*                  |
++----------------------+----------------------+
+| ActivateGclk         | No*                  |
++----------------------+----------------------+
+| ActiveReconfig       | No*                  |
++----------------------+----------------------+
+| PartialMask0         | (Not Specified)*     |
++----------------------+----------------------+
+| PartialMask1         | (Not Specified)*     |
++----------------------+----------------------+
+| PartialMask2         | (Not Specified)*     |
++----------------------+----------------------+
+| PartialGclk          | (Not Specified)*     |
++----------------------+----------------------+
+| PartialLeft          | (Not Specified)*     |
++----------------------+----------------------+
+| PartialRight         | (Not Specified)*     |
++----------------------+----------------------+
+| TimeStamp            | Default*             |
++----------------------+----------------------+
+| IEEE1532             | No*                  |
++----------------------+----------------------+
+| Binary               | No**                 |
++----------------------+----------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+There were 0 CONFIG constraint(s) processed from multiplier_chipscope.pcf.
+
+
+Running DRC.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<80> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<72> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<64> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<56> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<48> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<91> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<83> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<75> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<67> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<59> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<2> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<110> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<102> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<7> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<41> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<33> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<25> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<17> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<121> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<113> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<105> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<31> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<23> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<15> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<96> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<88> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<90> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<82> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<74> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<66> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<58> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<92> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<84> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<76> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<68> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<120> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<112> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<104> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<9> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<50> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<42> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<34> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<26> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<18> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<122> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<114> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<106> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<8> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<98> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<0> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<93> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<85> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<77> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<69> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<51> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<43> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<35> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<27> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<19> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<123> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<115> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<107> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<94> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<86> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<78> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<97> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<89> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<124> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<116> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<108> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<10> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<60> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<52> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<44> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<36> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<28> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<61> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<53> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<45> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<37> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<29> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<4> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<95> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<87> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<79> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<126> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<118> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<1> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<20> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<12> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<125> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<117> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<109> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<71> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<63> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<55> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<47> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<39> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<101> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<3> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<5> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<6> is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<11> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<13> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<14> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<16> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<21> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<22> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<24> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<30> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<127> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<32> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<38> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<40> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<46> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<49> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<54> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<57> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<62> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<99> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<70> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<81> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<73> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<65> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<111> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<103> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<100> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net tmp_prod<119> is sourced by
+   a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <FATTORE2/U0/I_VIO/reset_f_edge/iDOUT<1>> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <FATTORE1/U0/I_VIO/reset_f_edge/iDOUT<1>> is incomplete. The signal does not
+   drive any load pins in the design.
+DRC detected 0 errors and 130 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
+Creating bit map...
+Saving bit stream in "multiplier_chipscope.bit".
+Bitstream generation is complete.

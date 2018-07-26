@@ -1,0 +1,4 @@
+vhdl work "DCM_4.vhd"
+vhdl work "DCM_2.vhd"
+vhdl work "DCM.vhd"
+vhdl work "top_module.vhd"

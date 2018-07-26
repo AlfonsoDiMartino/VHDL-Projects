@@ -1,0 +1,12 @@
+EN ripple_carry_adder NULL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ripple_carry_adder.vhd sub00/vhpl02 1451987684
+EN vio_addend NULL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/vio_addend.vhd sub00/vhpl04 1451987686
+AR ripple_carry_adder structural /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ripple_carry_adder.vhd sub00/vhpl03 1451987685
+AR i_con i_con_a /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/i_con.vhd sub00/vhpl09 1451987691
+EN full_adder NULL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/full_adder.vhd sub00/vhpl00 1451987682
+AR adder_chipscope behavioral /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/rca_chipscope.vhd sub00/vhpl11 1451987693
+EN vio_sum NULL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/vio_sum.vhd sub00/vhpl06 1451987688
+AR vio_addend vio_addend_a /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/vio_addend.vhd sub00/vhpl05 1451987687
+AR vio_sum vio_sum_a /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/vio_sum.vhd sub00/vhpl07 1451987689
+AR full_adder behavioral /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/full_adder.vhd sub00/vhpl01 1451987683
+EN i_con NULL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/ipcore_dir/i_con.vhd sub00/vhpl08 1451987690
+EN adder_chipscope NULL /home/pietro/Scrivania/ISE_PROJECT/adder_chipscope/rca_chipscope.vhd sub00/vhpl10 1451987692

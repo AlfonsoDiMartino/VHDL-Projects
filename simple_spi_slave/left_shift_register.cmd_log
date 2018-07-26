@@ -1,0 +1,1 @@
+vhdtdtfi -prj simple_spi_slave -o /home/ssaa/Dropbox/Universita/magistrale/ASE/progettiISE/simple_spi_slave/left_shift_register.vhi -module left_shift_register -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work left_shift_register.vhd 

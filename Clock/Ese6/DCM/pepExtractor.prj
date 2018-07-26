@@ -1,0 +1,5 @@
+work	"DCM.vhd"
+work	"DCM_2.vhd"
+work	"DCM_3.vhd"
+work	"DCM_4.vhd"
+work	"top_module.vhd"

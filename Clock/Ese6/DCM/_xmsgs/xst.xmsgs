@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.vhd</arg>&quot; line <arg fmt="%d" index="2">78</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLKIN_IBUFG_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.vhd</arg>&quot; line <arg fmt="%d" index="2">78</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK0_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.vhd</arg>&quot; line <arg fmt="%d" index="2">78</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LOCKED_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.vhd</arg>&quot; line <arg fmt="%d" index="2">78</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">STATUS_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.vhd</arg>&quot; line <arg fmt="%d" index="2">92</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLKIN_IBUFG_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.vhd</arg>&quot; line <arg fmt="%d" index="2">92</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK0_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.vhd</arg>&quot; line <arg fmt="%d" index="2">92</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LOCKED_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.vhd</arg>&quot; line <arg fmt="%d" index="2">126</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLKIN_IBUFG_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_4</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">/home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.vhd</arg>&quot; line <arg fmt="%d" index="2">126</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CLK0_OUT</arg>&apos; of component &apos;<arg fmt="%s" index="4">DCM_4</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="79" delta="new" >Model &apos;<arg fmt="%s" index="1">DCM</arg>&apos; has different characteristics in destination library
+</msg>
+
+<msg type="warning" file="Xst" num="80" delta="new" >Model name has been changed to &apos;<arg fmt="%s" index="1">DCM1</arg>&apos;
+</msg>
+
+</messages>
+

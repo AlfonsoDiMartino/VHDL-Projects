@@ -1,0 +1,1037 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'adder_chipscope'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off
+-c 100 -o adder_chipscope_map.ncd adder_chipscope.ngd adder_chipscope.pcf 
+Target Device  : xc3s1200e
+Target Package : fg320
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Tue Jan  5 10:55:01 2016
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:  130
+Logic Utilization:
+  Number of Slice Flip Flops:         1,855 out of  17,344   10%
+  Number of 4 input LUTs:             1,094 out of  17,344    6%
+Logic Distribution:
+  Number of occupied Slices:          1,753 out of   8,672   20%
+    Number of Slices containing only related logic:   1,753 out of   1,753 100%
+    Number of Slices containing unrelated logic:          0 out of   1,753   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       1,124 out of  17,344    6%
+    Number used as logic:             1,094
+    Number used as a route-thru:         30
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                  2 out of     250    1%
+  Number of BUFGMUXs:                     1 out of      24    4%
+  Number of BSCANs:                       1 out of       1  100%
+
+Average Fanout of Non-Clock Nets:                2.53
+
+Peak Memory Usage:  604 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   3 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<9> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<7> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<5> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<3> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<11> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<79> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<78> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<77> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<87> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<86> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<85> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<25> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<21> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<19> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<111> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<49> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<41> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<37> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<29> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<127> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<126> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<125> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<112> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<88> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<80> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<72> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<68> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<64> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<56> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<52> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<44> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<34> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<26> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<22> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<90> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<82> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<74> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<66> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<4> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<117> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<97> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<89> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<40> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<16> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<91> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<83> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<75> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<67> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<70> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<38> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<118> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<98> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<0> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<17> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<12> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<120> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<92> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<84> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<76> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<71> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<39> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<119> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<1> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<50> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<42> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<13> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<121> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<113> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<93> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<69> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<48> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<51> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<43> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<27> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<122> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<114> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<94> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<81> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<73> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<65> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<36> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<124> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<116> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<96> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<23> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<10> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<123> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<115> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<95> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<62> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<54> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<46> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<58> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<100> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<32> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<24> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<104> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<6> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<59> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<110> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<102> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<33> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<105> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<31> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<15> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<18> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<106> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<8> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<35> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<107> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<2> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<108> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<60> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<28> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<61> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<53> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<45> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<20> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<109> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<63> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<55> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<47> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<101> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<99> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<30> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<14> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<57> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net virtual_in_sum<103> is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <VIO_ADD_1_INST/U0/I_VIO/reset_f_edge/iDOUT<1>> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <VIO_ADD_2_INST/U0/I_VIO/reset_f_edge/iDOUT<1>> is incomplete. The signal
+   does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 140 block(s) removed
+  28 block(s) optimized away
+ 126 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "I_CON_INST/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[10].U_LUT" (ROM)
+removed.
+Loadless block "I_CON_INST/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+Loadless block "I_CON_INST/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+Loadless block "I_CON_INST/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+Loadless block "I_CON_INST/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+Loadless block "I_CON_INST/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[3].U_LUT" (ROM)
+removed.
+Loadless block "I_CON_INST/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[4].U_LUT" (ROM)
+removed.
+Loadless block "I_CON_INST/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[5].U_LUT" (ROM)
+removed.
+Loadless block "I_CON_INST/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[6].U_LUT" (ROM)
+removed.
+Loadless block "I_CON_INST/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[7].U_LUT" (ROM)
+removed.
+Loadless block "I_CON_INST/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[8].U_LUT" (ROM)
+removed.
+Loadless block "I_CON_INST/U0/U_ICON/U_CMD/U_CORE_ID_SEL/I4.FI[9].U_LUT" (ROM)
+removed.
+Loadless block "VIO_ADD_1_INST/U0/I_VIO/reset_f_edge/I_H2L.U_DOUT" (SFF)
+removed.
+Loadless block "VIO_ADD_2_INST/U0/I_VIO/reset_f_edge/I_H2L.U_DOUT" (SFF)
+removed.
+The signal "CONTROL_ADD_1<10>" is sourceless and has been removed.
+ Sourceless block "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>152" (ROM)
+removed.
+  The signal "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>152" is sourceless and
+has been removed.
+   Sourceless block "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>179" (ROM)
+removed.
+    The signal "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>179" is sourceless and
+has been removed.
+The signal "CONTROL_ADD_1<11>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<12>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<13>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<14>" is sourceless and has been removed.
+ Sourceless block "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>128" (ROM)
+removed.
+  The signal "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>128" is sourceless and
+has been removed.
+The signal "CONTROL_ADD_1<15>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<16>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<17>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<18>" is sourceless and has been removed.
+ Sourceless block "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>115" (ROM)
+removed.
+  The signal "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>115" is sourceless and
+has been removed.
+The signal "CONTROL_ADD_1<19>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<20>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<21>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<22>" is sourceless and has been removed.
+ Sourceless block "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>77" (ROM)
+removed.
+  The signal "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>77" is sourceless and
+has been removed.
+   Sourceless block "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>91_SW0" (ROM)
+removed.
+    The signal "VIO_ADD_1_INST/N36" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<23>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<24>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<25>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<26>" is sourceless and has been removed.
+ Sourceless block "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>64" (ROM)
+removed.
+  The signal "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>64" is sourceless and
+has been removed.
+The signal "CONTROL_ADD_1<27>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<28>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<29>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<30>" is sourceless and has been removed.
+ Sourceless block "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>37" (ROM)
+removed.
+  The signal "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>37" is sourceless and
+has been removed.
+The signal "CONTROL_ADD_1<31>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<32>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<33>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<34>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<35>" is sourceless and has been removed.
+The signal "CONTROL_ADD_1<8>" is sourceless and has been removed.
+ Sourceless block "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>165" (ROM)
+removed.
+  The signal "VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>165" is sourceless and
+has been removed.
+The signal "CONTROL_ADD_1<9>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<10>" is sourceless and has been removed.
+ Sourceless block "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>152" (ROM)
+removed.
+  The signal "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>152" is sourceless and
+has been removed.
+   Sourceless block "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>179" (ROM)
+removed.
+    The signal "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>179" is sourceless and
+has been removed.
+The signal "CONTROL_ADD_2<11>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<12>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<13>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<14>" is sourceless and has been removed.
+ Sourceless block "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>128" (ROM)
+removed.
+  The signal "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>128" is sourceless and
+has been removed.
+The signal "CONTROL_ADD_2<15>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<16>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<17>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<18>" is sourceless and has been removed.
+ Sourceless block "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>115" (ROM)
+removed.
+  The signal "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>115" is sourceless and
+has been removed.
+The signal "CONTROL_ADD_2<19>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<20>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<21>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<22>" is sourceless and has been removed.
+ Sourceless block "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>77" (ROM)
+removed.
+  The signal "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>77" is sourceless and
+has been removed.
+   Sourceless block "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>91_SW0" (ROM)
+removed.
+    The signal "VIO_ADD_2_INST/N36" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<23>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<24>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<25>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<26>" is sourceless and has been removed.
+ Sourceless block "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>64" (ROM)
+removed.
+  The signal "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>64" is sourceless and
+has been removed.
+The signal "CONTROL_ADD_2<27>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<28>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<29>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<30>" is sourceless and has been removed.
+ Sourceless block "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>37" (ROM)
+removed.
+  The signal "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>37" is sourceless and
+has been removed.
+The signal "CONTROL_ADD_2<31>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<32>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<33>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<34>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<35>" is sourceless and has been removed.
+The signal "CONTROL_ADD_2<8>" is sourceless and has been removed.
+ Sourceless block "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>165" (ROM)
+removed.
+  The signal "VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>165" is sourceless and
+has been removed.
+The signal "CONTROL_ADD_2<9>" is sourceless and has been removed.
+The signal "CONTROL_SUM<10>" is sourceless and has been removed.
+ Sourceless block "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>152" (ROM) removed.
+  The signal "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>152" is sourceless and
+has been removed.
+   Sourceless block "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>179" (ROM) removed.
+    The signal "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>179" is sourceless and
+has been removed.
+The signal "CONTROL_SUM<11>" is sourceless and has been removed.
+The signal "CONTROL_SUM<12>" is sourceless and has been removed.
+The signal "CONTROL_SUM<13>" is sourceless and has been removed.
+The signal "CONTROL_SUM<14>" is sourceless and has been removed.
+ Sourceless block "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>128" (ROM) removed.
+  The signal "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>128" is sourceless and
+has been removed.
+The signal "CONTROL_SUM<15>" is sourceless and has been removed.
+The signal "CONTROL_SUM<16>" is sourceless and has been removed.
+The signal "CONTROL_SUM<17>" is sourceless and has been removed.
+The signal "CONTROL_SUM<18>" is sourceless and has been removed.
+ Sourceless block "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>115" (ROM) removed.
+  The signal "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>115" is sourceless and
+has been removed.
+The signal "CONTROL_SUM<19>" is sourceless and has been removed.
+The signal "CONTROL_SUM<20>" is sourceless and has been removed.
+The signal "CONTROL_SUM<21>" is sourceless and has been removed.
+The signal "CONTROL_SUM<22>" is sourceless and has been removed.
+ Sourceless block "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>77" (ROM) removed.
+  The signal "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>77" is sourceless and has
+been removed.
+   Sourceless block "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>91_SW0" (ROM)
+removed.
+    The signal "VIO_SUM_INST/N36" is sourceless and has been removed.
+The signal "CONTROL_SUM<23>" is sourceless and has been removed.
+The signal "CONTROL_SUM<24>" is sourceless and has been removed.
+The signal "CONTROL_SUM<25>" is sourceless and has been removed.
+The signal "CONTROL_SUM<26>" is sourceless and has been removed.
+ Sourceless block "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>64" (ROM) removed.
+  The signal "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>64" is sourceless and has
+been removed.
+The signal "CONTROL_SUM<27>" is sourceless and has been removed.
+The signal "CONTROL_SUM<28>" is sourceless and has been removed.
+The signal "CONTROL_SUM<29>" is sourceless and has been removed.
+The signal "CONTROL_SUM<30>" is sourceless and has been removed.
+ Sourceless block "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>37" (ROM) removed.
+  The signal "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>37" is sourceless and has
+been removed.
+The signal "CONTROL_SUM<31>" is sourceless and has been removed.
+The signal "CONTROL_SUM<32>" is sourceless and has been removed.
+The signal "CONTROL_SUM<33>" is sourceless and has been removed.
+The signal "CONTROL_SUM<34>" is sourceless and has been removed.
+The signal "CONTROL_SUM<35>" is sourceless and has been removed.
+The signal "CONTROL_SUM<5>" is sourceless and has been removed.
+The signal "CONTROL_SUM<6>" is sourceless and has been removed.
+ Sourceless block "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>165" (ROM) removed.
+  The signal "VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>165" is sourceless and
+has been removed.
+The signal "CONTROL_SUM<8>" is sourceless and has been removed.
+The signal "CONTROL_SUM<9>" is sourceless and has been removed.
+The signal "I_CON_INST/U0/U_ICON/U_CTRL_OUT/iCOMMAND_GRP_SEL<1>" is sourceless
+and has been removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[0].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[1].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[2].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[3].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[4].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[0].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[1].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[2].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[3].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[4].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[5].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[6].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[7].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[8].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[9].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[10].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[11].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[12].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[13].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[14].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[15].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[0].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[1].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[2].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[3].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[4].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[5].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[6].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[7].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[8].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[9].U_HCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[10].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[11].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[12].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[13].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[14].U_HCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[15].U_HCE"
+(ROM) removed.
+The signal "I_CON_INST/U0/U_ICON/iCOMMAND_SEL<4>" is sourceless and has been
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[4].U_LCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[4].U_LCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[4].U_LCE" (ROM)
+removed.
+The signal "I_CON_INST/U0/U_ICON/iCOMMAND_SEL<5>" is sourceless and has been
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[5].U_LCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[5].U_LCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[5].U_LCE" (ROM)
+removed.
+The signal "I_CON_INST/U0/U_ICON/iCOMMAND_SEL<6>" is sourceless and has been
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[6].U_LCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[6].U_LCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[6].U_LCE" (ROM)
+removed.
+The signal "I_CON_INST/U0/U_ICON/iCOMMAND_SEL<7>" is sourceless and has been
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[7].U_LCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[7].U_LCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[7].U_LCE" (ROM)
+removed.
+The signal "I_CON_INST/U0/U_ICON/iCOMMAND_SEL<8>" is sourceless and has been
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[8].U_LCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[8].U_LCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[8].U_LCE" (ROM)
+removed.
+The signal "I_CON_INST/U0/U_ICON/iCOMMAND_SEL<9>" is sourceless and has been
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[9].U_LCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[9].U_LCE" (ROM)
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[9].U_LCE" (ROM)
+removed.
+The signal "I_CON_INST/U0/U_ICON/iCOMMAND_SEL<10>" is sourceless and has been
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[10].U_LCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[10].U_LCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[10].U_LCE"
+(ROM) removed.
+The signal "I_CON_INST/U0/U_ICON/iCOMMAND_SEL<11>" is sourceless and has been
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[11].U_LCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[11].U_LCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[11].U_LCE"
+(ROM) removed.
+The signal "I_CON_INST/U0/U_ICON/iCOMMAND_SEL<12>" is sourceless and has been
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[12].U_LCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[12].U_LCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[12].U_LCE"
+(ROM) removed.
+The signal "I_CON_INST/U0/U_ICON/iCOMMAND_SEL<13>" is sourceless and has been
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[13].U_LCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[13].U_LCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[13].U_LCE"
+(ROM) removed.
+The signal "I_CON_INST/U0/U_ICON/iCOMMAND_SEL<14>" is sourceless and has been
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[14].U_LCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[14].U_LCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[14].U_LCE"
+(ROM) removed.
+The signal "I_CON_INST/U0/U_ICON/iCOMMAND_SEL<15>" is sourceless and has been
+removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[0].F_CMD[15].U_LCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[15].U_LCE"
+(ROM) removed.
+ Sourceless block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[15].U_LCE"
+(ROM) removed.
+Unused block "I_CON_INST/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[10].U_LUT" (ROM)
+removed.
+Unused block "I_CON_INST/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[11].U_LUT" (ROM)
+removed.
+Unused block "I_CON_INST/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[12].U_LUT" (ROM)
+removed.
+Unused block "I_CON_INST/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[13].U_LUT" (ROM)
+removed.
+Unused block "I_CON_INST/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[14].U_LUT" (ROM)
+removed.
+Unused block "I_CON_INST/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[15].U_LUT" (ROM)
+removed.
+Unused block "I_CON_INST/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[4].U_LUT" (ROM)
+removed.
+Unused block "I_CON_INST/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[5].U_LUT" (ROM)
+removed.
+Unused block "I_CON_INST/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[6].U_LUT" (ROM)
+removed.
+Unused block "I_CON_INST/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[7].U_LUT" (ROM)
+removed.
+Unused block "I_CON_INST/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[8].U_LUT" (ROM)
+removed.
+Unused block "I_CON_INST/U0/U_ICON/U_CMD/U_COMMAND_SEL/I4.FI[9].U_LUT" (ROM)
+removed.
+Unused block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[1].U_LCE" (ROM)
+removed.
+Unused block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/F_NCP[2].F_CMD[2].U_LCE" (ROM)
+removed.
+Unused block "I_CON_INST/U0/U_ICON/U_CTRL_OUT/U_CMDGRP1" (ROM) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		I_CON_INST/XST_GND
+VCC 		I_CON_INST/XST_VCC
+FDE 		VIO_ADD_1_INST/U0/I_VIO/U_DATA_OUT
+   optimized to 0
+LUT4 		VIO_ADD_1_INST/U0/I_VIO/U_STATUS/F_STAT[4].I_STAT.U_STAT
+   optimized to 0
+LUT4 		VIO_ADD_1_INST/U0/I_VIO/U_STATUS/F_STAT[5].I_STAT.U_STAT
+   optimized to 0
+LUT4 		VIO_ADD_1_INST/U0/I_VIO/U_STATUS/F_STAT[7].I_STAT.U_STAT
+   optimized to 0
+LUT3 		VIO_ADD_1_INST/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O_8
+   optimized to 0
+LUT4 		VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>12
+   optimized to 1
+LUT4 		VIO_ADD_1_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>91
+   optimized to 1
+GND 		VIO_ADD_1_INST/XST_GND
+VCC 		VIO_ADD_1_INST/XST_VCC
+FDE 		VIO_ADD_2_INST/U0/I_VIO/U_DATA_OUT
+   optimized to 0
+LUT4 		VIO_ADD_2_INST/U0/I_VIO/U_STATUS/F_STAT[4].I_STAT.U_STAT
+   optimized to 0
+LUT4 		VIO_ADD_2_INST/U0/I_VIO/U_STATUS/F_STAT[5].I_STAT.U_STAT
+   optimized to 0
+LUT4 		VIO_ADD_2_INST/U0/I_VIO/U_STATUS/F_STAT[7].I_STAT.U_STAT
+   optimized to 0
+LUT3 		VIO_ADD_2_INST/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O_8
+   optimized to 0
+LUT4 		VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>12
+   optimized to 1
+LUT4 		VIO_ADD_2_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>91
+   optimized to 1
+GND 		VIO_ADD_2_INST/XST_GND
+VCC 		VIO_ADD_2_INST/XST_VCC
+LUT4 		VIO_SUM_INST/U0/I_VIO/U_STATUS/F_STAT[5].I_STAT.U_STAT
+   optimized to 0
+LUT4 		VIO_SUM_INST/U0/I_VIO/U_STATUS/F_STAT[6].I_STAT.U_STAT
+   optimized to 0
+LUT4 		VIO_SUM_INST/U0/I_VIO/U_STATUS/F_STAT[7].I_STAT.U_STAT
+   optimized to 0
+LUT3 		VIO_SUM_INST/U0/I_VIO/U_STATUS/U_SMUX/U_CS_MUX/I4.U_MUX16/Mmux_O_7
+   optimized to 0
+LUT4 		VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>12
+   optimized to 1
+LUT4 		VIO_SUM_INST/U0/I_VIO/U_STATUS/iSTAT_CNT<7>91
+   optimized to 1
+GND 		VIO_SUM_INST/XST_GND
+VCC 		VIO_SUM_INST/XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| carry_in                           | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| carry_out                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

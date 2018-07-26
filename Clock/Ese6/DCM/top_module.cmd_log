@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.xst" -ofn "/home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.syr" 

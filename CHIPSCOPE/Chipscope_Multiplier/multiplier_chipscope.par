@@ -1,0 +1,725 @@
+Release 14.7 par P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+pietro-S551LN::  Mon Jan 04 21:51:51 2016
+
+par -w -intstyle ise -ol high -t 1 multiplier_chipscope_map.ncd
+multiplier_chipscope.ncd multiplier_chipscope.pcf 
+
+
+Constraints file: multiplier_chipscope.pcf.
+Loading device for application Rf_Device from file '3s1200e.nph' in environment /opt/Xilinx/14.7/ISE_DS/ISE/.
+   "multiplier_chipscope" is an NCD, version 3.2, device xc3s1200e, package fg320, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.27 2013-10-13".
+
+
+Design Summary Report:
+
+ Number of External IOBs                           0 out of 250     0%
+
+   Number of External Input IOBs                  0
+
+
+   Number of External Output IOBs                 0
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BSCANs                          1 out of 1     100%
+   Number of BUFGMUXs                        1 out of 24      4%
+   Number of Slices                       6184 out of 8672   71%
+      Number of SLICEMs                      0 out of 4336    0%
+
+
+
+Overall effort level (-ol):   High 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 4 secs 
+Finished initial Timing Analysis.  REAL time: 4 secs 
+
+WARNING:Par:288 - The signal FATTORE2/U0/I_VIO/reset_f_edge/iDOUT<1> has no load.  PAR will not attempt to route this
+   signal.
+WARNING:Par:288 - The signal FATTORE1/U0/I_VIO/reset_f_edge/iDOUT<1> has no load.  PAR will not attempt to route this
+   signal.
+
+Starting Placer
+Total REAL time at the beginning of Placer: 4 secs 
+Total CPU  time at the beginning of Placer: 4 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:123e762) REAL time: 4 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:123e762) REAL time: 4 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:dfc98247) REAL time: 4 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:c23adfb7) REAL time: 5 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:c23adfb7) REAL time: 5 secs 
+
+Phase 6.36  Local Placement Optimization
+Phase 6.36  Local Placement Optimization (Checksum:c23adfb7) REAL time: 5 secs 
+
+Phase 7.8  Global Placement
+......................................................................................................................
+......................................................................................................................................................................................
+......................................................................................................................................................................................
+Phase 7.8  Global Placement (Checksum:a013bb54) REAL time: 29 secs 
+
+Phase 8.5  Local Placement Optimization
+Phase 8.5  Local Placement Optimization (Checksum:a013bb54) REAL time: 29 secs 
+
+Phase 9.18  Placement Optimization
+Phase 9.18  Placement Optimization (Checksum:b77524d5) REAL time: 41 secs 
+
+Phase 10.5  Local Placement Optimization
+Phase 10.5  Local Placement Optimization (Checksum:b77524d5) REAL time: 41 secs 
+
+Total REAL time to Placer completion: 42 secs 
+Total CPU  time to Placer completion: 42 secs 
+Writing design to file multiplier_chipscope.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 42758 unrouted;      REAL time: 48 secs 
+
+Phase  2  : 41549 unrouted;      REAL time: 49 secs 
+
+Phase  3  : 11375 unrouted;      REAL time: 52 secs 
+
+Phase  4  : 11405 unrouted; (Par is working to improve performance)     REAL time: 53 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 16 secs 
+
+Updating file: multiplier_chipscope.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 22 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 46 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 55 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 55 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 56 secs 
+
+Phase 11  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 56 secs 
+
+Phase 12  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 59 secs 
+WARNING:Route:455 - CLK Net:tmp_prod<0> may have excessive skew because 
+      1 CLK pins and 0 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<2> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<3> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<1> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<4> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<5> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<6> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<7> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<8> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<9> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<10> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<11> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<12> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<13> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<14> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<15> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<16> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<17> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<18> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<19> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<20> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<21> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<22> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<23> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<24> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<25> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<26> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<27> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<28> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<29> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<30> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<31> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<32> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<33> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<34> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<35> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<36> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<37> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<38> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<39> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<40> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<41> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<42> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<43> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<44> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<45> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<46> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<47> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<48> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<49> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<50> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<51> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<52> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<53> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<54> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<55> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<56> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<57> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<58> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<59> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<60> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<61> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<62> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<63> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<64> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<65> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<66> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<67> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<68> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<69> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<70> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<71> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<72> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<73> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<74> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<75> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<76> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<77> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<78> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<79> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<80> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<81> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<82> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<83> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<84> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<85> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<87> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<86> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<89> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<88> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<90> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<91> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<92> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<93> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<94> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<95> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<96> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<97> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<98> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<99> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<100> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<101> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<102> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<103> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<105> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<104> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<106> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<107> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<108> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<109> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<110> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<111> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<112> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<113> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<114> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<115> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<116> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<117> may have excessive skew because 
+      1 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<118> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<119> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<120> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<121> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<122> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<123> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<124> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<125> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<127> may have excessive skew because 
+      2 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+WARNING:Route:455 - CLK Net:tmp_prod<126> may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 1 mins 59 secs 
+Total CPU time to Router completion: 1 mins 59 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|         control0<0> | BUFGMUX_X1Y10| No   |  806 |  0.208     |  0.380      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<80> |         Local|      |    3 |  0.003     |  1.454      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<72> |         Local|      |    3 |  0.468     |  1.177      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<64> |         Local|      |    3 |  0.535     |  0.851      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<56> |         Local|      |    3 |  0.051     |  1.193      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<48> |         Local|      |    3 |  0.000     |  1.645      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<91> |         Local|      |    3 |  0.589     |  1.488      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<83> |         Local|      |    3 |  0.284     |  1.151      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<75> |         Local|      |    3 |  0.282     |  0.611      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<67> |         Local|      |    3 |  0.000     |  0.560      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<59> |         Local|      |    3 |  0.813     |  1.150      |
++---------------------+--------------+------+------+------------+-------------+
+|         tmp_prod<2> |         Local|      |    3 |  0.031     |  0.393      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<110> |         Local|      |    3 |  0.097     |  1.800      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<102> |         Local|      |    3 |  0.000     |  0.626      |
++---------------------+--------------+------+------+------------+-------------+
+|         tmp_prod<7> |         Local|      |    3 |  0.004     |  1.472      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<41> |         Local|      |    3 |  0.005     |  1.485      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<33> |         Local|      |    3 |  0.002     |  0.369      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<25> |         Local|      |    3 |  0.000     |  0.661      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<17> |         Local|      |    3 |  0.014     |  0.882      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<121> |         Local|      |    3 |  0.289     |  0.918      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<113> |         Local|      |    3 |  0.002     |  0.370      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<105> |         Local|      |    3 |  0.275     |  1.131      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<31> |         Local|      |    3 |  0.000     |  1.540      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<23> |         Local|      |    3 |  0.048     |  1.456      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<15> |         Local|      |    3 |  0.341     |  1.183      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<96> |         Local|      |    3 |  0.242     |  2.124      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<88> |         Local|      |    3 |  0.002     |  1.162      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<90> |         Local|      |    3 |  0.000     |  1.489      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<82> |         Local|      |    3 |  0.002     |  0.869      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<74> |         Local|      |    3 |  0.275     |  1.419      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<66> |         Local|      |    3 |  0.000     |  0.661      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<58> |         Local|      |    3 |  0.276     |  0.862      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<92> |         Local|      |    3 |  0.298     |  1.712      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<84> |         Local|      |    3 |  0.286     |  1.749      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<76> |         Local|      |    3 |  0.224     |  0.844      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<68> |         Local|      |    3 |  0.000     |  1.444      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<120> |         Local|      |    3 |  0.000     |  0.660      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<112> |         Local|      |    3 |  0.000     |  0.662      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<104> |         Local|      |    3 |  0.334     |  0.893      |
++---------------------+--------------+------+------+------------+-------------+
+|         tmp_prod<9> |         Local|      |    3 |  0.273     |  1.168      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<50> |         Local|      |    3 |  0.005     |  1.466      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<42> |         Local|      |    3 |  0.050     |  0.926      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<34> |         Local|      |    3 |  0.539     |  1.435      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<26> |         Local|      |    3 |  0.000     |  0.406      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<18> |         Local|      |    3 |  0.000     |  1.882      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<122> |         Local|      |    3 |  0.002     |  0.663      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<114> |         Local|      |    3 |  0.097     |  0.676      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<106> |         Local|      |    3 |  0.000     |  0.898      |
++---------------------+--------------+------+------+------------+-------------+
+|         tmp_prod<8> |         Local|      |    3 |  0.014     |  1.469      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<98> |         Local|      |    3 |  0.003     |  0.667      |
++---------------------+--------------+------+------+------------+-------------+
+|         tmp_prod<0> |         Local|      |    2 |  0.177     |  0.538      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<93> |         Local|      |    3 |  0.000     |  1.417      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<85> |         Local|      |    3 |  0.000     |  0.661      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<77> |         Local|      |    3 |  0.015     |  0.677      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<69> |         Local|      |    3 |  0.003     |  1.436      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<51> |         Local|      |    3 |  0.823     |  1.150      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<43> |         Local|      |    3 |  0.000     |  1.145      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<35> |         Local|      |    3 |  0.000     |  0.308      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<27> |         Local|      |    3 |  0.000     |  0.661      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<19> |         Local|      |    3 |  0.000     |  0.373      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<123> |         Local|      |    3 |  0.000     |  0.661      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<115> |         Local|      |    3 |  0.000     |  0.370      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<107> |         Local|      |    3 |  0.046     |  0.625      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<94> |         Local|      |    3 |  0.196     |  1.959      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<86> |         Local|      |    3 |  0.011     |  1.440      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<78> |         Local|      |    3 |  0.000     |  0.690      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<97> |         Local|      |    3 |  1.116     |  1.442      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<89> |         Local|      |    3 |  0.371     |  1.480      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<124> |         Local|      |    3 |  0.000     |  0.660      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<116> |         Local|      |    3 |  0.002     |  0.692      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<108> |         Local|      |    3 |  0.049     |  0.926      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<10> |         Local|      |    3 |  0.092     |  2.012      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<60> |         Local|      |    3 |  0.219     |  0.844      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<52> |         Local|      |    3 |  0.000     |  0.661      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<44> |         Local|      |    3 |  0.000     |  1.536      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<36> |         Local|      |    3 |  0.000     |  0.663      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<28> |         Local|      |    3 |  0.023     |  1.479      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<61> |         Local|      |    3 |  0.275     |  0.591      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<53> |         Local|      |    3 |  0.000     |  0.661      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<45> |         Local|      |    3 |  0.294     |  1.161      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<37> |         Local|      |    3 |  0.000     |  0.661      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<29> |         Local|      |    3 |  0.011     |  2.500      |
++---------------------+--------------+------+------+------------+-------------+
+|         tmp_prod<4> |         Local|      |    3 |  0.431     |  1.142      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<95> |         Local|      |    3 |  0.000     |  0.560      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<87> |         Local|      |    3 |  0.276     |  0.592      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<79> |         Local|      |    3 |  0.000     |  0.664      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<126> |         Local|      |    3 |  0.000     |  0.655      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<118> |         Local|      |    3 |  0.000     |  1.198      |
++---------------------+--------------+------+------+------------+-------------+
+|         tmp_prod<1> |         Local|      |    3 |  0.003     |  1.642      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<20> |         Local|      |    3 |  0.538     |  1.109      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<12> |         Local|      |    3 |  0.010     |  1.453      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<125> |         Local|      |    3 |  0.107     |  0.952      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<117> |         Local|      |    3 |  0.634     |  1.500      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<109> |         Local|      |    3 |  0.000     |  0.897      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<71> |         Local|      |    3 |  0.236     |  1.167      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<63> |         Local|      |    3 |  0.283     |  0.604      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<55> |         Local|      |    3 |  0.571     |  0.898      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<47> |         Local|      |    3 |  0.003     |  1.469      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<39> |         Local|      |    3 |  0.824     |  1.150      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<101> |         Local|      |    3 |  0.002     |  0.313      |
++---------------------+--------------+------+------+------------+-------------+
+|         tmp_prod<3> |         Local|      |    3 |  0.000     |  0.679      |
++---------------------+--------------+------+------+------------+-------------+
+|         tmp_prod<5> |         Local|      |    3 |  0.000     |  0.661      |
++---------------------+--------------+------+------+------------+-------------+
+|         tmp_prod<6> |         Local|      |    3 |  0.265     |  0.883      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<11> |         Local|      |    3 |  0.604     |  1.478      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<13> |         Local|      |    3 |  0.107     |  2.031      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<14> |         Local|      |    3 |  0.003     |  0.370      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<16> |         Local|      |    3 |  0.000     |  0.373      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<21> |         Local|      |    3 |  0.029     |  1.741      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<22> |         Local|      |    3 |  0.045     |  1.524      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<24> |         Local|      |    3 |  0.041     |  1.757      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<30> |         Local|      |    3 |  0.000     |  2.128      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<127> |         Local|      |    3 |  0.000     |  1.150      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<32> |         Local|      |    3 |  0.011     |  1.854      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<38> |         Local|      |    3 |  0.173     |  1.917      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<40> |         Local|      |    3 |  0.000     |  2.066      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<46> |         Local|      |    3 |  0.270     |  1.167      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<49> |         Local|      |    3 |  0.464     |  1.145      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<54> |         Local|      |    3 |  0.000     |  0.902      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<57> |         Local|      |    3 |  0.000     |  0.661      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<62> |         Local|      |    3 |  0.232     |  1.191      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<99> |         Local|      |    3 |  0.002     |  0.684      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<70> |         Local|      |    3 |  0.008     |  1.451      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<81> |         Local|      |    3 |  0.826     |  1.154      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<73> |         Local|      |    3 |  0.308     |  0.891      |
++---------------------+--------------+------+------+------------+-------------+
+|        tmp_prod<65> |         Local|      |    3 |  0.306     |  1.172      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<111> |         Local|      |    3 |  0.520     |  1.382      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<103> |         Local|      |    3 |  0.035     |  0.901      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<100> |         Local|      |    3 |  0.302     |  1.451      |
++---------------------+--------------+------+------+------------+-------------+
+|       tmp_prod<119> |         Local|      |    3 |  0.000     |  1.118      |
++---------------------+--------------+------+------+------------+-------------+
+|your_instance_name/U |              |      |      |            |             |
+|       0/iUPDATE_OUT |         Local|      |    1 |  0.000     |  0.807      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net con | SETUP       |         N/A|   227.309ns|     N/A|           0
+  trol0<0>                                  | HOLD        |     0.918ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net you | SETUP       |         N/A|     1.476ns|     N/A|           0
+  r_instance_name/U0/iUPDATE_OUT            | HOLD        |     1.028ns|            |       0|           0
+                                            | MINPERIOD   |         N/A|     1.596ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 2 mins 2 secs 
+Total CPU time to PAR completion: 2 mins 2 secs 
+
+Peak Memory Usage:  741 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 132
+Number of info messages: 1
+
+Writing design to file multiplier_chipscope.ncd
+
+
+
+PAR done!

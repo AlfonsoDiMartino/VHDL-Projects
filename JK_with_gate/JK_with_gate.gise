@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="JK_with_gate.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="RS_Clocked_Preset_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ffJK.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ffJK.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ffJK.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ffJK.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ffJK.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ffJK.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ffJK.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ffJK.xst"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ffJK_MS.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ffJK_MS.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ffJK_MS.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ffJK_MS.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ffJK_MS.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ffJK_MS.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ffJK_MS.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ffJK_MS.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="ffJK_MS_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ffJK_MS_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ffJK_MS_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="ffJK_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ffJK_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ffJK_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ffT.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ffT.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ffT.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ffT.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ffT.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ffT.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ffT.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ffT.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ffT_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="ffT_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ffT_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ffT_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="tb_ffJK_MS_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="tb_ffJK_MS_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="tb_ffJK_MS_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1453137157" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1453137157">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453137157" xil_pn:in_ck="6509971388383163090" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1453137157">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="RS_Clocked_Preset.vhd"/>
+      <outfile xil_pn:name="ffJK.vhd"/>
+      <outfile xil_pn:name="ffJK_MS.vhd"/>
+      <outfile xil_pn:name="ffT.vhd"/>
+      <outfile xil_pn:name="myAND.vhd"/>
+      <outfile xil_pn:name="myNor3.vhd"/>
+      <outfile xil_pn:name="tb_RS_CLK_PRESET.vhd"/>
+      <outfile xil_pn:name="tb_ffJK.vhd"/>
+      <outfile xil_pn:name="tb_ffJK_MS.vhd"/>
+      <outfile xil_pn:name="tb_ffT.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1453137157" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4371823598677706741" xil_pn:start_ts="1453137157">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453137157" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4043812728216696115" xil_pn:start_ts="1453137157">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453137157" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6353867225358144633" xil_pn:start_ts="1453137157">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1453137157" xil_pn:in_ck="6509971388383163090" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1453137157">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="RS_Clocked_Preset.vhd"/>
+      <outfile xil_pn:name="ffJK.vhd"/>
+      <outfile xil_pn:name="ffJK_MS.vhd"/>
+      <outfile xil_pn:name="ffT.vhd"/>
+      <outfile xil_pn:name="myAND.vhd"/>
+      <outfile xil_pn:name="myNor3.vhd"/>
+      <outfile xil_pn:name="tb_RS_CLK_PRESET.vhd"/>
+      <outfile xil_pn:name="tb_ffJK.vhd"/>
+      <outfile xil_pn:name="tb_ffJK_MS.vhd"/>
+      <outfile xil_pn:name="tb_ffT.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1453137164" xil_pn:in_ck="6509971388383163090" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6378430015308088808" xil_pn:start_ts="1453137157">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="tb_ffJK_MS_beh.prj"/>
+      <outfile xil_pn:name="tb_ffJK_MS_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1453137203" xil_pn:in_ck="-593967434201195484" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4829879649856477355" xil_pn:start_ts="1453137203">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="tb_ffJK_MS_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1453137004" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1453137004">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453288854" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-747584931576416191" xil_pn:start_ts="1453288854">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453288854" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="5409199792760188341" xil_pn:start_ts="1453288854">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453288854" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1453288854">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453288854" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="4151928853058541247" xil_pn:start_ts="1453288854">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453288854" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-5485052969259075108" xil_pn:start_ts="1453288854">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453288854" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="7610146564161396543" xil_pn:start_ts="1453288854">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1453288860" xil_pn:in_ck="5764920596214699021" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1923084269959964018" xil_pn:start_ts="1453288854">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="ffJK.ngr"/>
+      <outfile xil_pn:name="ffT.lso"/>
+      <outfile xil_pn:name="ffT.ngc"/>
+      <outfile xil_pn:name="ffT.ngr"/>
+      <outfile xil_pn:name="ffT.prj"/>
+      <outfile xil_pn:name="ffT.stx"/>
+      <outfile xil_pn:name="ffT.syr"/>
+      <outfile xil_pn:name="ffT.xst"/>
+      <outfile xil_pn:name="ffT_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>

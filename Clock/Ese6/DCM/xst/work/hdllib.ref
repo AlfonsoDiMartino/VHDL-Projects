@@ -1,0 +1,8 @@
+AR dcm behavioral /home/pietro/Scrivania/ISE_PROJECT/DCM/DCM.vhd sub00/vhpl03 1452339659
+AR top_module behavioral /home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.vhd sub00/vhpl01 1452339665
+EN dcm NULL /home/pietro/Scrivania/ISE_PROJECT/DCM/DCM.vhd sub00/vhpl02 1452339658
+EN top_module NULL /home/pietro/Scrivania/ISE_PROJECT/DCM/top_module.vhd sub00/vhpl00 1452339664
+EN dcm_2 NULL /home/pietro/Scrivania/ISE_PROJECT/DCM/DCM_2.vhd sub00/vhpl04 1452339660
+EN dcm_4 NULL /home/pietro/Scrivania/ISE_PROJECT/DCM/DCM_4.vhd sub00/vhpl06 1452339662
+AR dcm_4 behavioral /home/pietro/Scrivania/ISE_PROJECT/DCM/DCM_4.vhd sub00/vhpl07 1452339663
+AR dcm_2 behavioral /home/pietro/Scrivania/ISE_PROJECT/DCM/DCM_2.vhd sub00/vhpl05 1452339661

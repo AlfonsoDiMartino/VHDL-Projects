@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/multiplier_chipscope.ncd
+OUTFILE=/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier/multiplier_chipscope.bit
+FAMILY=Spartan3E
+PART=xc3s1200e-4fg320
+WORKINGDIR=/home/pietro/Scrivania/ISE_PROJECT/Chipscope_Multiplier
+LICENSE=WebPack
+USER_INFO=211107787_0_0_215

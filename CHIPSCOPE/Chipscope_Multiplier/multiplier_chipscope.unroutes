@@ -1,0 +1,14 @@
+Release 14.7 - par P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Jan  4 21:53:54 2016
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   FATTORE1/U0/I_VIO/reset_f_edge/iDOUT<1>
+   FATTORE2/U0/I_VIO/reset_f_edge/iDOUT<1>
+
+

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffT.xst" -ofn "/home/pietro/Dropbox/ase/componenti vhdl/JK_with_gate/ffT.syr" 
